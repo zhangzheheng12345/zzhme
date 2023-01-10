@@ -5,4 +5,4 @@ title: My Blogs
 
 # My Blogs
 
-* [Say Hello](/blogs/say_hello)
+1. [Say Hello](/blogs/say_hello)
