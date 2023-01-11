@@ -1,8 +1,26 @@
+@import url('https://fonts.font.im/css?family=Noto+Sans|Righteous');
+/*
+Usage:
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Righteous', sans-serif;
+*/
+
 * {
   margin: 0px;
   padding: 0px;
-  font-size:18px;
+  font-size: 20px;
+  font-family: 'Noto Sans', sans-serif;
   color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-family: 'Righteous', sans-serif;
 }
 
 h1 {
