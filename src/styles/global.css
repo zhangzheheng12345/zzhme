@@ -19,3 +19,13 @@ h4 {
 h5 {
   font-size: 23px;
 }
+
+a {
+  text-decoration: none;
+  opacity: 0.85;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+a:hover {
+  text-decoration: underline;
+}
