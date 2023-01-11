@@ -20,6 +20,7 @@ h4,
 h5,
 h6 {
   font-family: 'Righteous', sans-serif;
+  line-height: 150%;
 }
 
 h1 {
@@ -38,8 +39,6 @@ h4 {
 a {
   text-decoration: none;
   opacity: 0.6;
-  margin-left: 2px;
-  margin-right: 2px;
 }
 a:hover {
   text-decoration: underline;
