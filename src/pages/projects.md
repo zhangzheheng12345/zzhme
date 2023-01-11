@@ -3,8 +3,6 @@ layout: ../layouts/MainLayout.astro
 title: My Projects
 ---
 
-# Projects
-
 ## Lightest
 
 [Github Repo](https://github.com/zhangzheheng12345/Lightest)
