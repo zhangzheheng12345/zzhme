@@ -37,10 +37,15 @@ h4 {
 
 a {
   text-decoration: none;
-  opacity: 0.8;
+  opacity: 0.6;
   margin-left: 2px;
   margin-right: 2px;
 }
 a:hover {
   text-decoration: underline;
+}
+
+nav > a:hover {
+  text-decoration: none;
+  background-color: #999;
 }

@@ -3,11 +3,11 @@ layout: ../layouts/MainLayout.astro
 title: Hi! I'm Zheheng Zhang!
 ---
 
-I'm a beginner & lover of programming, and a junior high school student. I look forward to be a programmer in the future, so now I'm making efforts.
+I'm a beginner & lover of programming, and a junior high school student. I look forward to becoming a programmer in the future, so now I'm making efforts.
 
 ## Interests
 
-Currently interested in Go, C++, HTML & JavaScript & CSS & Typescript & Vue & Astro (in short that's front end tech), Python, Haskell, Brainfuck (just for fun) and dev tools making.
+Currently I'm interested in Go, C++, HTML & JavaScript & CSS & Typescript & Vue & Astro (in short that's front end tech), Python, Haskell, Brainfuck (just for fun) and dev tools making.
 
 ## About this page
 
