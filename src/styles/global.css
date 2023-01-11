@@ -1,28 +1,26 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-size: 20px;
+  font-size:18px;
+  color: #000;
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 33px;
 }
 h2 {
- font-size: 32px;
-}
-h3 {
   font-size: 29px;
 }
-h4 {
-  font-size: 26px;
+h3 {
+  font-size: 25px;
 }
-h5 {
-  font-size: 23px;
+h4 {
+  font-size: 21px;
 }
 
 a {
   text-decoration: none;
-  opacity: 0.85;
+  opacity: 0.8;
   margin-left: 2px;
   margin-right: 2px;
 }
