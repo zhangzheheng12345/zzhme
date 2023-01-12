@@ -2,7 +2,6 @@ import { defineConfig } from 'astro/config'
 import UnoCSS from 'unocss/astro'
 import { presetUno, presetIcons } from 'unocss'
 import vue from '@astrojs/vue'
-
 import netlify from '@astrojs/netlify/functions'
 
 // https://astro.build/config

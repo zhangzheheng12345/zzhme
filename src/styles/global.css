@@ -12,6 +12,7 @@ Usage:
   font-family: 'Noto Sans', sans-serif;
   color: #000;
   background-color: #fff;
+  line-height: 155%;
 }
 
 h1,
@@ -21,6 +22,7 @@ h4,
 h5,
 h6 {
   font-family: 'Palanquin Dark', sans-serif;
+  line-height: 170%;
 }
 
 h1 {
@@ -44,7 +46,23 @@ a:hover {
   text-decoration: underline;
 }
 
-nav > a:hover {
-  text-decoration: none;
-  background-color: #999;
+ul > li::before {
+  content: '· ';
+  font-weight: 900;
+}
+
+ul,
+ol {
+  margin: 10px;
+}
+
+img {
+  padding: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  * {
+    color: #fff;
+    background-color: #171717;
+  }
 }

@@ -1,0 +1,18 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro'
+
+const blogs = await Astro.glob('./*.md')
+---
+
+<MainLayout frontmatter={{ title: 'My Blogs' }}>
+  <ol>
+    {
+      blogs.map((blog, index) => (
+        <li>
+          <span class="op60 mr-10px">{blog.frontmatter.time}</span>
+          {blog.frontmatter.title}
+        </li>
+      ))
+    }
+  </ol>
+</MainLayout>
