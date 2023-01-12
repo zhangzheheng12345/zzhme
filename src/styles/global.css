@@ -13,6 +13,7 @@ Usage:
   color: #000;
   background-color: #fff;
   line-height: 155%;
+  opacity: 0.87;
 }
 
 h1,
@@ -23,6 +24,7 @@ h5,
 h6 {
   font-family: 'Palanquin Dark', sans-serif;
   line-height: 170%;
+  opacity: 1.0;
 }
 
 h1 {
@@ -40,7 +42,7 @@ h4 {
 
 a {
   text-decoration: none;
-  opacity: 0.6;
+  opacity: 1.0;
 }
 a:hover {
   text-decoration: underline;
