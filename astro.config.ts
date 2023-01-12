@@ -13,7 +13,9 @@ export default defineConfig({
           scale: 1.4,
           cdn: 'https://esm.sh'
         }),
-        presetUno()
+        presetUno({
+          dark: 'media'
+        })
       ]
     }),
     vue()
