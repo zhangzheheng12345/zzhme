@@ -11,7 +11,7 @@ An extremely light, header-only but meanwhile string, flexible and customizable 
 
 The library includes all the basic features of a unit test library, such as test definitions, assertions, and pretty output formatting.
 
-## flowscript
+## FlowScript
 
 [Github Repo](https://github.com/zhangzheheng12345/flowscript)
 
@@ -34,13 +34,11 @@ echoln "fibonacci begins ..."
 fibonacci 1 1
 ```
 
-## visual-brainfuck-web
-
-![Website image](https://s1.ax1x.com/2022/12/19/zqRsw8.jpg)
+## Visual Brainfuck Web
 
 [Github Repo](https://github.com/zhangzheheng12345/visual-brainfuck-web)
 
-[Website](https://visual-brainfuck-web.netlify.app) **<-- Have a try!**
+[Website](https://visual-brainfuck-web.netlify.app)
 
 An online brainfuck interpreter with a real-time visual memory.
 
@@ -48,12 +46,10 @@ I am a lover of Brainfuck, so I started this project to debug Brainfuck easier.
 
 This project is written in Vue3.
 
-## birthday-count-downer
-
-![Website Image](https://s1.ax1x.com/2022/09/12/vXu5QO.png)
+## Birthday Count Downer
 
 [Github Repo](https://github.com/zhangzheheng12345/birthday-count-downer)
 
-[Website](https://birthday-count-downer.netlify.app) **<-- Have a try!**
+[Website](https://birthday-count-downer.netlify.app)
 
 A simple birthday count downer machine written in Vue3.
