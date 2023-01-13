@@ -36,9 +36,9 @@ fibonacci 1 1
 
 ## Visual Brainfuck Web
 
-[Github Repo](https://github.com/zhangzheheng12345/visual-brainfuck-web)
+[GitHub Repo](https://github.com/zhangzheheng12345/visual-brainfuck-web)
 
-[Website](https://visual-brainfuck-web.netlify.app)
+Website at [visual-brainfuck-web.netlify.app](https://visual-brainfuck-web.netlify.app)
 
 An online brainfuck interpreter with a real-time visual memory.
 
@@ -48,8 +48,8 @@ This project is written in Vue3.
 
 ## Birthday Count Downer
 
-[Github Repo](https://github.com/zhangzheheng12345/birthday-count-downer)
+[GitHub Repo](https://github.com/zhangzheheng12345/birthday-count-downer)
 
-[Website](https://birthday-count-downer.netlify.app)
+Website at [birthday-count-downer.netlify.app](https://birthday-count-downer.netlify.app)
 
-A simple birthday count downer machine written in Vue3.
+A simple birthday-counting-down machine written in Vue3.
