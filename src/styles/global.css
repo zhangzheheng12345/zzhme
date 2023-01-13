@@ -13,7 +13,7 @@ Usage:
   color: #000;
   background-color: #fff;
   line-height: 155%;
-  color: #535353;
+  color: #616161;
 }
 
 h1,
@@ -65,7 +65,7 @@ img {
 @media (prefers-color-scheme: dark) {
   * {
     background-color: #111;
-    color: #727272;
+    color: #7e7e7e;
   }
 
   a,
