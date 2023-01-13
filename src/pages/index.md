@@ -3,7 +3,8 @@ layout: ../layouts/MainLayout.astro
 title: Hi! I'm Zheheng Zhang!
 ---
 
-I'm a beginner & lover of programming, and a junior high school student. I look forward to becoming a programmer in the future, so now I'm making efforts.
+I'm a lover of programming and open source, and a junior high school student.
+I look forward to becoming a programmer in the future, so now I'm making efforts.
 
 ## My interests
 

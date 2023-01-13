@@ -7,7 +7,7 @@ title: My Projects
 
 [Github Repo](https://github.com/zhangzheheng12345/Lightest)
 
-An extremely light, header-only but meanwhile string, flexible and customizable C++ unit test library. (C++11 required)
+An extremely light, header-only but meanwhile strong, flexible and customizable C++ unit test library. (C++11 required)
 
 The library includes all the basic features of a unit test library, such as test definitions, assertions, and pretty output formatting.
 

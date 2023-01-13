@@ -65,7 +65,7 @@ img {
 @media (prefers-color-scheme: dark) {
   * {
     background-color: #111;
-    color: #7e7e7e;
+    color: #888;
   }
 
   a,
