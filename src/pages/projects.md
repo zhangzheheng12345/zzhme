@@ -5,7 +5,7 @@ title: My Projects
 
 ## Lightest
 
-[Github Repo](https://github.com/zhangzheheng12345/Lightest)
+* [Github Repo](https://github.com/zhangzheheng12345/Lightest)
 
 An extremely light, header-only but meanwhile strong, flexible and customizable C++ unit test library. (C++11 required)
 
@@ -13,7 +13,7 @@ The library includes all the basic features of a unit test library, such as test
 
 ## FlowScript
 
-[Github Repo](https://github.com/zhangzheheng12345/flowscript)
+* [Github Repo](https://github.com/zhangzheheng12345/flowscript)
 
 An embed interpreter of a special functional language of **FlowScript** (created by myself) written in Go.
 
@@ -36,9 +36,8 @@ fibonacci 1 1
 
 ## Visual Brainfuck Web
 
-[GitHub Repo](https://github.com/zhangzheheng12345/visual-brainfuck-web)
-
-Website at [visual-brainfuck-web.netlify.app](https://visual-brainfuck-web.netlify.app)
+* [GitHub Repo](https://github.com/zhangzheheng12345/visual-brainfuck-web)
+* Website at [visual-brainfuck-web.netlify.app](https://visual-brainfuck-web.netlify.app)
 
 An online brainfuck interpreter with a real-time visual memory.
 
@@ -48,8 +47,7 @@ This project is written in Vue3.
 
 ## Birthday Count Downer
 
-[GitHub Repo](https://github.com/zhangzheheng12345/birthday-count-downer)
-
-Website at [birthday-count-downer.netlify.app](https://birthday-count-downer.netlify.app)
+* [GitHub Repo](https://github.com/zhangzheheng12345/birthday-count-downer)
+* Website at [birthday-count-downer.netlify.app](https://birthday-count-downer.netlify.app)
 
 A simple birthday-counting-down machine written in Vue3.
