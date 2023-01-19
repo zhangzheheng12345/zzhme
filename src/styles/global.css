@@ -1,8 +1,9 @@
-@import url('https://fonts.font.im/css?family=Noto+Sans|Palanquin+Dark');
+@import url('https://fonts.font.im/css?family=Noto+Sans|Palanquin+Dark|Roboto+Mono');
 /*
 Usage:
   font-family: 'Noto Sans', sans-serif;
   font-family: 'Palanquin Dark', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 */
 
 * {
@@ -80,6 +81,7 @@ img {
 }
 .astro-code * {
   background-color: transparent;
+  font-family: 'Roboto Mono', monospace;
 }
 
 @media (prefers-color-scheme: dark) {

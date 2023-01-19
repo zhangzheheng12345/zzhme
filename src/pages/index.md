@@ -6,7 +6,7 @@ title: Hi! I'm Zheheng Zhang!
 I'm a lover of programming and open source, and a junior high school student.
 I look forward to becoming a programmer in the future, so now I'm making efforts.
 
-## My interests
+## My Interests
 
 Currently I'm interested in:
 
@@ -18,7 +18,7 @@ Currently I'm interested in:
 * Brainfuck (just for fun)
 * Dev tools making
 
-## About this page
+## About This Page
 
 This page is built using Astro, Vue, and UnoCSS, powered by Netlify.
 It's still in progress.
