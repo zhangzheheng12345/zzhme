@@ -80,6 +80,7 @@ img {
   background-color: #303033 !important; 
 }
 .astro-code * {
+  line-height: 100%;
   background-color: transparent;
   font-family: 'Roboto Mono', monospace;
 }
