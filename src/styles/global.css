@@ -66,8 +66,10 @@ img {
 }
 
 .astro-code {
-  margin: 10px;
-  background-color: transparent !important;
+  margin: 7px;
+  padding: 7px;
+  border-radius: 3px;
+  background-color: #333336 !important; 
 }
 
 @media (prefers-color-scheme: dark) {
