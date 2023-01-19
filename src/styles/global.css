@@ -8,11 +8,11 @@ Usage:
 * {
   margin: 0px;
   padding: 0px;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Noto Sans', sans-serif;
   color: #000;
   background-color: #fff;
-  line-height: 165%;
+  line-height: 170%;
   color: #616161;
 }
 
@@ -23,29 +23,29 @@ h4,
 h5,
 h6 {
   font-family: 'Palanquin Dark', sans-serif;
-  line-height: 175%;
+  line-height: 180%;
   color: #111;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 38px;
 }
 h2 {
-  font-size: 35px;
-}
-h3 {
   font-size: 30px;
 }
-h4 {
+h3 {
   font-size: 25px;
 }
+h4 {
+  font-size: 20px;
+}
 h5 {
- font-size: 20px;
+ font-size: 18px;
 }
 
 p {
-  margin: 5px;
-  margin-top: 8px;
+  margin: 8px;
+  margin-top: 12px;
   margin-bottom: 8px;
 }
 
@@ -73,8 +73,9 @@ img {
 
 .astro-code {
   margin: 7px;
-  padding: 7px;
-  border-radius: 3px;
+  padding: 5px;
+  padding-left: 10px;
+  border-radius: 5px;
   background-color: #303033 !important; 
 }
 .astro-code * {
