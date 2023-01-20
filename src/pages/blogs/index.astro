@@ -11,8 +11,8 @@ const blogs = await Astro.glob('./*.md')
         <li class="flex">
           <span class="mr-10px">{blog.frontmatter.time}</span>
           <a href={blog.url}>{blog.frontmatter.title}</a>
-          { blog.frontmatter.cn ? <span class="border-2px rounded-3px text-12px lh-100% p-5px m-5px">中文</span> : <span/> }5
-          { blog.frontmatter.inProgress ? <span class="i-mdi-hammer text-inherit m-5px"></span> : <span/> }
+          { blog.frontmatter.cn ? <span class="border-2px rounded-3px text-12px lh-100% p-3px m-5px">中文</span> : <span/> }
+          { blog.frontmatter.inProgress ? <span class="i-mdi-hammer text-inherit ml-5px"></span> : <span/> }
         </li>
       ))
     }
