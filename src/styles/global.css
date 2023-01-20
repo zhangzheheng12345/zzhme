@@ -11,10 +11,11 @@ Usage:
   padding: 0px;
   font-size: 17px;
   font-family: 'Noto Sans', sans-serif;
-  color: #000;
   background-color: #fff;
   line-height: 170%;
   color: #616161;
+  border-width: 0px;
+  border-color: #616161;
 }
 
 h1,
@@ -89,6 +90,7 @@ img {
   * {
     background-color: #111;
     color: #888;
+    boder-color: #888;
   }
 
   a,

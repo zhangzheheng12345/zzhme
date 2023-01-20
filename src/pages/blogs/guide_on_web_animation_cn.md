@@ -3,6 +3,7 @@ layout: ../../layouts/MainLayout.astro
 title: Web动画指南
 time: 2023.1.19
 cn: true
+inProgress: true
 ---
 
 由于想要在个人网站的主页上加一些炫酷的动画来提高一点点逼格，于是我开始了漫长的探索 Web 动画的旅程……下面就分享一下我的“见闻”。
