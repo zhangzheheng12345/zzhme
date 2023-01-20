@@ -23,8 +23,10 @@ const { frontmatter } = Astro.props
 
 <style lang="stylus">
   @media (min-width: 720px) and (max-width: 1100px)
-    width: 700px
+    .fit-screen
+      width: 700px
 
   @media (min-width: 1101px)
-    width: 63%;
+    .fit-screen
+      width: 63%;
 </style>
