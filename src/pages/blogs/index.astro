@@ -8,10 +8,11 @@ const blogs = await Astro.glob('./*.md')
   <ol>
     {
       blogs.map((blog, index) => (
-        <li>
+        <li class="flex">
           <span class="mr-10px">{blog.frontmatter.time}</span>
           <a href={blog.url}>{blog.frontmatter.title}</a>
-          { blog.frontmatter.cn ? <span class="border-2px rounded-3px text-16px">中文</span>}
+          { blog.frontmatter.cn ? <span class="border-2px rounded-3px text-16px">中文</span> : <span/> }
+          { blog.frontmatter.inProgress ? <span class="i-mdi-hammer text-inherit"></span> : <span/> }
         </li>
       ))
     }

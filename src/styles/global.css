@@ -76,13 +76,10 @@ img {
   margin: 7px;
   padding: 5px;
   padding-left: 10px;
-  border-radius: 5px;
+  border-radius: 7px;
   background-color: #303033 !important;
 }
 .astro-code * {
-  margin: 0px;
-  padding: 0px;
-  line-height: 100%;
   background-color: transparent;
   font-family: 'Roboto Mono', monospace;
   font-size: 17px;
