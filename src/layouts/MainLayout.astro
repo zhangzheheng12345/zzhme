@@ -14,9 +14,17 @@ const { frontmatter } = Astro.props
   </head>
   <body>
     <Head />
-    <div class="p-8% ma pt-12% max-w-700px">
+    <div class="ma p-8% pt-12% fit-screen">
       <h1>{frontmatter.title}</h1>
       <slot />
     </div>
   </body>
 </html>
+
+<style lang="stylus">
+  @media only screen and (min-width: 720px) and (max-width: 900px)
+    width: 700px
+
+  @media only screen and (min-width: 901px)
+    width: 77%;
+</style>

@@ -10,13 +10,13 @@ I look forward to becoming a programmer in the future, so now I'm making efforts
 
 Currently I'm interested in:
 
-* Go
-* C++
-* HTML & JavaScript & CSS & Typescript & Vue & Astro (in short that's front end tech)
-* Python
-* Haskell
-* Brainfuck (just for fun)
-* Dev tools making
+- Go
+- C++
+- HTML & JavaScript & CSS & Typescript & Vue & Astro (in short that's front end tech)
+- Python
+- Haskell
+- Brainfuck (just for fun)
+- Dev tools making
 
 ## About This Page
 
