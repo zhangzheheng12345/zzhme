@@ -9,7 +9,7 @@ Usage:
 * {
   margin: 0px;
   padding: 0px;
-  font-size: 16px;
+  font-size: 17px;
   font-family: 'Noto Sans', sans-serif;
   color: #000;
   background-color: #fff;
@@ -29,19 +29,19 @@ h6 {
 }
 
 h1 {
-  font-size: 38px;
-}
-h2 {
   font-size: 30px;
 }
+h2 {
+  font-size: 26px;
+}
 h3 {
-  font-size: 25px;
+  font-size: 24px;
 }
 h4 {
-  font-size: 20px;
+  font-size: 22px;
 }
 h5 {
- font-size: 18px;
+ font-size: 20px;
 }
 
 p {
@@ -80,9 +80,12 @@ img {
   background-color: #303033 !important; 
 }
 .astro-code * {
+  margin: 0px;
+  padding: 0px; 
   line-height: 100%;
   background-color: transparent;
   font-family: 'Roboto Mono', monospace;
+  font-size: 17px;
 }
 
 @media (prefers-color-scheme: dark) {

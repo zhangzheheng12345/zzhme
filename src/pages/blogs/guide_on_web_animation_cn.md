@@ -36,7 +36,7 @@ time: 2023.1.19
 
 成熟的、流行的原子化CSS库有[Tailwind CSS](https://tailwindcss.com)（[中文官网](https://www.tailwind.cn)），[Windi CSS](https://windicss.org)，还有[UnoCSS](https://uno.antfu.me)。它们本身都自带一些原子化CSS动画类，例如`bounce`等等。
 
-进一步地，上三者中个人认为UnoCSS最为好用，它是Anthony Fu大佬的开源项目。它相较于Tailwin CSS 和Windi CSS而言，更加灵活、强大、高性能，能做到按需生成、高度定制，同时可以和Vite立刻集成。但UnoCSS的核心本身只是一个原子化CSS引擎，所以需要配合官方给出的一些预设（presets）来达到快速上手开箱即用（这个过程相当简单）；同时既然UnoCSS的核心是一个引擎，接口就会直接暴露，定制和扩展就会非常容易。
+进一步地，上三者中个人认为UnoCSS最为好用，它是Anthony Fu大佬的开源项目。它相较于Tailwin CSS 和Windi CSS，更加灵活、强大、高性能，能做到按需生成、高度定制，同时可以和Vite立刻集成。但UnoCSS的核心本身只是一个原子化CSS引擎，所以需要配合官方给出的一些预设（presets）来达到快速上手、开箱即用（这个过程相当简单）；同时既然UnoCSS的核心是一个引擎，接口就会直接暴露，定制和扩展就会非常容易。
 
 ### Animista.net
 
@@ -46,12 +46,30 @@ time: 2023.1.19
 
 我的一个项目：生日倒数器，就是用了Animista.net添加了异常丝滑的动画。你可以访问[生日倒数器网站](https://birthday-count-downer.netlify.app)来看看Animista.net提供的动画的实例。
 
-## 直接手写CSS动画？你需要CSS预处理器的帮助来纵享丝滑！
+## 直接手写CSS动画？你需要CSS预处理器的帮助！
 
 你可以使用`@keyframes`直接手写CSS动画，参见[MDN](https://developer.mozilla.org)提供的详细文档。另外HTML元素直接变换样式时，也可以用`transition`来实现样式过渡，详见MDN。
 
 但众所周知，CSS`@keyframes`是用关键帧实现动画的，而关键帧之间是粗暴生硬地直接由浏览器完成线性过渡，所以漂亮的动画就必须要daliang关键帧才能看上去丝滑。这就劝退了我在内的一些人直接手写丝滑的CSS，各种尝试之后我终于发现借助CSS预处理器似乎才是最佳方案。
 
 利用循环、计算、套上自己的动画曲线函数，你就可以让CSS预处理器自动生成符合你想要的速度变化的一长串关键帧，进而无比丝滑，同时源代码量不膨胀。成熟而流行的CSS预处理器有[SASS](https://sass-lang.com)（[中文官网](https://www.sass.hk)），[LESS](https://lesscss.org)（[中文官网](https://less.bootcss.com)），以及[Stylus](https://stylus-lang.com)（[中文官网](https://www.stylus-lang.cn)）。其中LESS不内置循环，需要用递归写法来代替。（上三者个人更推荐Stylus，因为非常简洁、灵活、强大）
+
+以下是一个基于Stylus的实例，div将会匀加速向右移动：
+
+```html
+<div class="box lengthen"></div>
+```
+
+```stylus
+.box
+  width: 10px
+  height: 10px
+  animation: lengthen 5s
+ 
+@keyframes lengthen
+  for i in 0..10
+    {10% * i}
+      transform: translate(i*i, 0)
+```
 
 **STILL IN PROGRESS**
