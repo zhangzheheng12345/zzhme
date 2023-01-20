@@ -4,8 +4,10 @@
     <img src="/logo_dark.svg" alt="Home" class="hidden dark:inline-block" />
   </a>
   <div class="flex-auto"></div>
-  <a href="/blogs/">Blogs</a>
-  <a href="/projects">Projects</a>
+  <a href="/blogs/" class="jump-link">Blogs</a>
+  <a href="/blogs/" class="i-carbon-blog jump-icon"></a>
+  <a href="/projects" class="jump-link">Projects</a>
+  <a href="/projects/" class="i-carbon-box jump-icon"></a>
   <a
     href="https://github/zhangzheheng12345"
     target="_blank"
@@ -13,12 +15,20 @@
     title="My GitHub"></a>
 </nav>
 
-<style>
-  a {
-    margin: 5px;
-    font-size: 18px;
-  }
-  img {
-    padding: 0px;
-  }
+<style lang="stylus">
+  a
+    margin: 5px
+    font-size: 18px
+
+  img
+    padding: 0px
+
+  .jump-icon
+    display: none
+
+  @media only screnn and (max-width: 550px)
+    .jump-link
+      display: none
+    .jump-icon
+      display: inline-block
 </style>
