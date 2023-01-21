@@ -78,7 +78,7 @@ code {
   color: #000;
   margin: 4px;
   padding: 3px;
-  line-height: 100%;
+  line-height: 0%;
   font-size: 15px;
 }
 .astro-code {
@@ -89,6 +89,7 @@ code {
   background-color: #303033 !important;
 }
 .astro-code * {
+  line-height: 0%;
   background-color: transparent;
   font-family: 'Roboto Mono', monospace;
   font-size: 15px;
