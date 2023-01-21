@@ -48,7 +48,7 @@ inProgress: true
 
 一个 CSS 动画 playground，有大量的预设 CSS 动画，非常丝滑，并且可以直接自定义各种参数。你可以直接拷贝源代码，或者选择多个动画动画下载 CSS 整个文件。但使用它会存在项目中 CSS 代码量疯狂膨胀的情况，同时直接把这些机器生成的 CSS 塞进项目里、不利用 NPM 等的生态集成，显然不算很优雅的解决方案。
 
-我的一个项目：生日倒数器，就是用了 Animista.net 添加了异常丝滑的动画。你可以访问[生日倒数器网站](https://birthday-count-downer.netlify.app)来看看 Animista.net 提供的动画的实例。
+我的一个项目：生日倒数器，就是用了 Animista.net 添加了丝滑的动画。你可以访问[我的生日倒数器网站](https://birthday-count-downer.netlify.app)来看看 Animista.net 提供的动画的实例。
 
 ## 直接手写 CSS 动画？你需要 CSS 预处理器的帮助！
 
