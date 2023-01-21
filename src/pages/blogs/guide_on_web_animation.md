@@ -5,6 +5,8 @@ time: 2023.1.19
 inProgress: true
 ---
 
+I want to add some cool animation to my personal website, so start this interesting journey for exploring Web animation. Here are some of my sees and hears.
+
 ## Immediate Libraries for CSS Animation
 
 Some animation libraries provide CSS animation which you can use immediately. They fit most of the occasions.
@@ -23,7 +25,7 @@ Here is an example:
 
 ### Use Atomic CSS Libraries
 
-If you just want to add style to one or to elements, ~~as a person with OCD,~~ you will certainly feel uncomfortable to specially create a single class or id selector for it (or them). So here I recommend atomic CSS, which enabling you to add styles in the class list 'atmocally', so that the expectation of CSS in HTML will be reached.
+If you just want to add style to one or to elements, ~~as a person with OCD,~~ you will certainly feel uncomfortable to specially create a single class or id selector for it (or them). So here I recommend atomic CSS, which enabling you to add styles in the class list 'atomically', so that the expectation of CSS in HTML will be reached.
 
 Here is an an instance of UnoCSS, and in fact most of the atomic CSS libraries shall be used smimlarly:
 
