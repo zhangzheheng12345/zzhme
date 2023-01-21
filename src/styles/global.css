@@ -73,6 +73,13 @@ img {
   padding: 10px;
 }
 
+code {
+  background-color: #aaaaad;
+  color: #000;
+  margin: 4px;
+  padding: 3px;
+  line-height: 100%;
+}
 .astro-code {
   margin: 7px;
   padding: 5px;
@@ -100,6 +107,11 @@ img {
   h4,
   h5,
   h6 {
+    color: #fff;
+  }
+
+  code {
+    background-color: #38383b;
     color: #fff;
   }
 }
