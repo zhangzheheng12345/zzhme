@@ -3,19 +3,18 @@ import '../styles/global.css'
 
 import Head from '../components/Head.astro'
 
-const { frontmatter } = Astro.props
+const { title } = Astro.props
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{frontmatter.title}</title>
+    <title>{ title }</title>
   </head>
   <body>
     <Head />
     <div class="ma p-8% pt-12% fit-screen">
-      <h1>{frontmatter.title}</h1>
       <slot />
     </div>
   </body>

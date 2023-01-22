@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MainLayout.astro
+layout: ../../layouts/BlogLayout.astro
 title: Say Hello!
 time: 2023.1.11
 ---

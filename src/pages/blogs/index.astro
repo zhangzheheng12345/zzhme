@@ -1,4 +1,5 @@
 ---
+import ChineseBadge from '../../components/ChineseBadege'
 import MainLayout from '../../layouts/MainLayout.astro'
 
 const blogs = await Astro.glob('./*.md')
@@ -11,7 +12,7 @@ const blogs = await Astro.glob('./*.md')
         <li class="flex items-center flex-wrap">
           <span class="mr-10px">{blog.frontmatter.time}</span>
           <a href={blog.url}>{blog.frontmatter.title}</a>
-          { blog.frontmatter.cn ? <span class="border-2px rounded-3px text-12px lh-100% p-3px ml-5px">中文</span> : <span/> }
+          <ChineseBadge isCn={ fblog.rontmatter.cn }/>
           { blog.frontmatter.inProgress ? <span class="i-mdi-hammer text-inherit ml-5px"></span> : <span/> }
         </li>
       ))

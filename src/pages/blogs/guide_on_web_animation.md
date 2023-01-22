@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MainLayout.astro
+layout: ../../layouts/BlogLayout.astro
 title: A Guide on Web aninmtion
 time: 2023.1.19
 inProgress: true
@@ -55,7 +55,7 @@ You can use `@keyframes` to write CSS animation by hand, details according to [M
 
 But as we all know, `@keyframe` in CSS uses keyframe, but transitions between keyframes are completed by browsers linearly. So beautiful animation requires plenty of keyframes to make it smoothy. This stops some people, me included, writing CSS animation by hand. I finally discovered that to get help from CSS prerpocessors is the best choice.
 
-Using loop, calculation, and function for animation curve defined, you can make CSS preprocessors to generating a long trail of keyframes which, so that animations can be extremely smoothy, meanwhile cause no inflation of CSS code. Popular CSS preprocessors include [SASS](https://sass-lang.com), [LESS](https://lesscss.org), and [Stylus](https://stylus-lang.com). Specially, LESS doesn't support loop by default, so you need to use recursion syntax instead. 
+Using loop, calculation, and function for animation curve defined, you can make CSS preprocessors to generating a long trail of keyframes which, so that animations can be extremely smoothy, meanwhile cause no inflation of CSS code. Popular CSS preprocessors include [SASS](https://sass-lang.com), [LESS](https://lesscss.org), and [Stylus](https://stylus-lang.com). Specially, LESS doesn't support loop by default, so you need to use recursion syntax instead.
 
 Among three above, I individually recommend Stylus more, since it's very succinct flexible and strong. But to consider more about ecosystem, you may prefer SASS or LESS.
 

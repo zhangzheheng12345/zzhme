@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/MainLayout.astro
+layout: ../layouts/BLogLayout.astro
 title: My Projects
 ---
 

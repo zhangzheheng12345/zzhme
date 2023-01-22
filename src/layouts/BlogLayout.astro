@@ -1,0 +1,13 @@
+---
+import  ChineseBadge from '../components/ChinseBadge'
+import MainLayout from 'MainLayout'
+
+const { frontmatter } = Astro.props
+---
+
+<MainLayout title={ frontmatter.title }>
+  <h1>{ frrontmatter.title }</h1>
+  <ChineseBadge isCn={ frontmatter.cn }/>
+  <slot />
+  { frontmatter.inProgress ? <div class="w-100% p-10px text-bold">STILL IN PROGRESS</div> : <div/> }
+</MainLayout>

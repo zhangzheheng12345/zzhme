@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MainLayout.astro
+layout: ../../layouts/BlogLayout.astro
 title: Web动画指南
 time: 2023.1.19
 cn: true
