@@ -9,7 +9,7 @@ Usage:
 * {
   margin: 0px;
   padding: 0px;
-  font-size: 17px;
+  font-size: 15px;
   font-family: 'Noto Sans', sans-serif;
   background-color: #fff;
   line-height: 170%;
@@ -43,6 +43,9 @@ h4 {
 }
 h5 {
   font-size: 20px;
+}
+h6 {
+  font-size: 18px;
 }
 
 p {
@@ -79,7 +82,7 @@ code {
   margin: 4px;
   padding: 3px;
   line-height: 0%;
-  font-size: 15px;
+  font-size: 13px;
 }
 .astro-code {
   margin: 7px;
@@ -92,7 +95,7 @@ code {
   line-height: 100%;
   background-color: transparent;
   font-family: 'Roboto Mono', monospace;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 @media (prefers-color-scheme: dark) {
