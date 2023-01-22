@@ -6,7 +6,7 @@ title: Hi! I'm Zheheng Zhang!
 I'm a lover of programming and open source, and a junior high school student.
 I look forward to becoming a programmer in the future, so now I'm making efforts.
 
-On my personal website, you can read my blogs [here](/blogs/), and also take a look at [my project list](/projects).
+On my personal website, you can read my blog [here](/blog/), and also take a look at [my project list](/projects).
 
 ## My Interests
 
