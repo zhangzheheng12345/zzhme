@@ -50,15 +50,17 @@ inProgress: true
 
 我的一个项目：生日倒数器，就是用了 Animista.net 添加了丝滑的动画。你可以访问[我的生日倒数器网站](https://birthday-count-downer.netlify.app)来看看 Animista.net 提供的动画的实例。
 
-## 直接手写 CSS 动画？你需要 CSS 预处理器的帮助！
+## 手写 CSS 动画？你需要 CSS 预处理器的帮助！
 
-你可以使用`@keyframes`直接手写 CSS 动画，参见[MDN](https://developer.mozilla.org)提供的详细文档。另外 HTML 元素直接变换样式时，也可以用`transition`来实现样式过渡，详见 MDN。
+你可以使用`@keyframes`手写 CSS 动画，参见[MDN](https://developer.mozilla.org)提供的详细文档。另外 HTML 元素直接变换样式时，也可以用`transition`来实现样式过渡，详见 MDN。
 
-但众所周知，CSS`@keyframes`是用关键帧实现动画的，而关键帧之间是粗暴生硬地直接由浏览器完成线性过渡，所以漂亮的动画就必须要 daliang 关键帧才能看上去丝滑。这就劝退了我在内的一些人直接手写丝滑的 CSS，各种尝试之后我终于发现借助 CSS 预处理器似乎才是最佳方案。
+但众所周知，CSS`@keyframes`是用关键帧实现动画的，而关键帧之间是粗暴生硬地直接由浏览器完成线性过渡，所以漂亮的动画就必须要大量关键帧才能看上去丝滑。各种尝试之后我终于发现借助 CSS 预处理器似乎才是最佳方案。
 
-利用循环、计算、套上自己的动画曲线函数，你就可以让 CSS 预处理器自动生成符合你想要的速度变化的一长串关键帧，进而无比丝滑，同时源代码量不膨胀。成熟而流行的 CSS 预处理器有[SASS](https://sass-lang.com)（[中文官网](https://www.sass.hk)），[LESS](https://lesscss.org)（[中文官网](https://less.bootcss.com)），以及[Stylus](https://stylus-lang.com)（[中文官网](https://www.stylus-lang.cn)）。其中 LESS 不内置循环，需要用递归写法来代替。（上三者个人更推荐 Stylus，因为非常简洁、灵活、强大）
+利用循环、计算、套上自己的动画曲线函数，你就可以让 CSS 预处理器自动生成符合你想要的速度变化的一长串关键帧，进而无比丝滑，同时源代码量不膨胀。流行的 CSS 预处理器有[SASS](https://sass-lang.com)（[中文官网](https://www.sass.hk)），[LESS](https://lesscss.org)（[中文官网](https://less.bootcss.com)），以及[Stylus](https://stylus-lang.com)（[中文官网](https://www.stylus-lang.cn)）。其中 LESS 不内置循环，需要用递归写法来代替。
 
-以下是一个基于 Stylus 的实例，div 将会匀加速向右移动：
+上三者个人更推荐 Stylus，因为非常简洁、灵活、强大。但如果更多地考虑生态，那么应当使用SASS或LESS。
+
+以下是一个基于 Stylus 的实例，`div`将会匀加速向右移动：
 
 ```html
 <div class="box lengthen"></div>

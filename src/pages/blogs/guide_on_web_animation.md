@@ -49,4 +49,34 @@ A CSS animation playground with plenty of smoothy preset animation. Parameters o
 
 One of my project: birthday count downer, uses Animista.net to add smoothy animations. You can visit [website of my birthday count downer](https://birthday-count-downer.netlify.app) to see an instance whose animations powered by Animista.net.
 
+## Write CSS animation by hand? You need help from CSS preprocessors!
+
+You can use `@keyframes` to write CSS animation by hand, details according to [MDN](https://developer.mozilla.org). And when changing style of HTML elements, you can use `transition` to realize transtions.
+
+But as we all know, `@keyframe` in CSS uses keyframe, but transitions between keyframes are completed by browsers linearly. So beautiful animation requires plenty of keyframes to make it smoothy. This stops some people, me included, writing CSS animation by hand. I finally discovered that to get help from CSS prerpocessors is the best choice.
+
+Using loop, calculation, and function for animation curve defined, you can make CSS preprocessors to generating a long trail of keyframes which, so that animations can be extremely smoothy, meanwhile cause no inflation of CSS code. Popular CSS preprocessors include [SASS](https://sass-lang.com), [LESS](https://lesscss.org), and [Stylus](https://stylus-lang.com). Specially, LESS doesn't support loop by default, so you need to use recursion syntax instead. 
+
+Among three above, I individually recommend Stylus more, since it's very succinct flexible and strong. But to consider more about ecosystem, you may prefer SASS or LESS.
+
+Here is an instance based on Stylus. The `div` should move right uniformly accelerated.
+
+以下是一个基于 Stylus 的实例，`div`将会匀加速向右移动：
+
+```html
+<div class="box lengthen"></div>
+```
+
+```stylus
+.box
+  width: 10px
+  height: 10px
+  animation: lengthen 5s
+
+@keyframes lengthen
+  for i in 0..10
+    {10% * i}
+      transform: translate(i*i, 0)
+```
+
 **STILL IN PROGRESS**
