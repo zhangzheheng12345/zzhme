@@ -81,19 +81,20 @@ code {
   color: #000;
   margin: 4px;
   padding: 3px;
-  line-height: 0%;
+  line-height: 100%;
   font-size: 14px;
 }
 .astro-code {
   margin: 7px;
   padding: 5px;
+  line-height: 110%;
   padding-left: 10px;
   border-radius: 7px;
   background-color: #303033 !important;
 }
 .astro-code * {
-  line-height: 100%;
   background-color: transparent;
+  line-height: 100%;
   font-family: 'Roboto Mono', monospace;
   font-size: 14px;
 }
