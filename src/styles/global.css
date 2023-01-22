@@ -74,7 +74,7 @@ img {
 }
 
 code {
-  background-color: #ddddddf;
+  background-color: #dddddf;
   color: #000;
   margin: 4px;
   padding: 3px;
@@ -89,7 +89,7 @@ code {
   background-color: #303033 !important;
 }
 .astro-code * {
-  line-height: 0%;
+  line-height: 100%;
   background-color: transparent;
   font-family: 'Roboto Mono', monospace;
   font-size: 15px;
@@ -99,7 +99,7 @@ code {
   * {
     background-color: #111;
     color: #888;
-    boder-color: #888;
+    border-color: #888;
   }
 
   a,

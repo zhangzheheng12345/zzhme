@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/MainPageLAyout.astro
+layout: ../layouts/MainPageLayout.astro
 title: Hi! I'm Zheheng Zhang!
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: A Guide on Web aninmtion
+title: A Guide on Web Animation
 time: 2023.1.19
 inProgress: true
 ---
@@ -78,5 +78,3 @@ Here is an instance based on Stylus. The `div` should move right uniformly accel
     {10% * i}
       transform: translate(i*i, 0)
 ```
-
-**STILL IN PROGRESS**

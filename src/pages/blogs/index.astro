@@ -1,18 +1,19 @@
 ---
-import ChineseBadge from '../../components/ChineseBadege'
+import ChineseBadge from '../../components/ChineseBadge.astro'
 import MainLayout from '../../layouts/MainLayout.astro'
 
 const blogs = await Astro.glob('./*.md')
 ---
 
 <MainLayout frontmatter={{ title: 'My Blogs' }}>
+  <h1>My Blogs</h1>
   <ol>
     {
       blogs.map((blog, index) => (
         <li class="flex items-center flex-wrap">
           <span class="mr-10px">{blog.frontmatter.time}</span>
           <a href={blog.url}>{blog.frontmatter.title}</a>
-          <ChineseBadge isCn={ fblog.rontmatter.cn }/>
+          <ChineseBadge isCn={ blog.frontmatter.cn }/>
           { blog.frontmatter.inProgress ? <span class="i-mdi-hammer text-inherit ml-5px"></span> : <span/> }
         </li>
       ))

@@ -38,9 +38,9 @@ inProgress: true
 
 流行的原子化 CSS 库有[Tailwind CSS](https://tailwindcss.com)（[中文官网](https://www.tailwind.cn)），[Windi CSS](https://windicss.org)，还有[UnoCSS](https://uno.antfu.me)。它们本身都自带一些原子化 CSS 动画类，例如`bounce`等等。
 
-进一步地，上三者中个人认为 UnoCSS 最为好用，它是[Anthony Fu](https://antfu.me)大佬的开源项目，我的个人网站也使用了UnoCSS。它相较于 Tailwin CSS 和 Windi CSS，更加灵活、强大、高性能，能做到按需生成、高度定制，同时可以和 Vite 立刻集成。但 UnoCSS 的核心本身只是一个原子化 CSS 引擎，所以需要配合官方给出的一些预设（presets）来达到快速上手、开箱即用（这个过程相当简单）；同时既然 UnoCSS 的核心是一个引擎，接口就会直接暴露，定制和扩展就会非常容易。
+进一步地，上三者中个人认为 UnoCSS 最为好用，它是[Anthony Fu](https://antfu.me)大佬的开源项目，我的个人网站也使用了 UnoCSS。它相较于 Tailwind CSS 和 Windi CSS，更加灵活、强大、高性能，能做到按需生成、高度定制，同时可以和 Vite 立刻集成。但 UnoCSS 的核心本身只是一个原子化 CSS 引擎，所以需要配合官方给出的一些预设（presets）来达到快速上手、开箱即用（这个过程相当简单）；同时既然 UnoCSS 的核心是一个引擎，接口就会直接暴露，定制和扩展就会非常容易。
 
-除了UnoCSS 的文档（链接见上），你可以读一读Anthony Fu的博文[Reimagine Atomic CSS](https://antfu.me/posts/reimagine-atomic-css)（中文：[重新构想原子化CSS](https://antfu.me/posts/reimagine-atomic-css-zh)）或者访问[GitHub repo of UnoCSS](https://github.com/unocss/unocss) 来了解更多.
+除了 UnoCSS 的文档（链接见上），你可以读一读 Anthony Fu 的博文[Reimagine Atomic CSS](https://antfu.me/posts/reimagine-atomic-css)（中文：[重新构想原子化 CSS](https://antfu.me/posts/reimagine-atomic-css-zh)）或者访问[GitHub repo of UnoCSS](https://github.com/unocss/unocss) 来了解更多.
 
 ### Animista.net
 
@@ -58,7 +58,7 @@ inProgress: true
 
 利用循环、计算、套上自己的动画曲线函数，你就可以让 CSS 预处理器自动生成符合你想要的速度变化的一长串关键帧，进而无比丝滑，同时源代码量不膨胀。流行的 CSS 预处理器有[SASS](https://sass-lang.com)（[中文官网](https://www.sass.hk)），[LESS](https://lesscss.org)（[中文官网](https://less.bootcss.com)），以及[Stylus](https://stylus-lang.com)（[中文官网](https://www.stylus-lang.cn)）。其中 LESS 不内置循环，需要用递归写法来代替。
 
-上三者个人更推荐 Stylus，因为非常简洁、灵活、强大。但如果更多地考虑生态，那么应当使用SASS或LESS。
+上三者个人更推荐 Stylus，因为非常简洁、灵活、强大。但如果更多地考虑生态，那么应当使用 SASS 或 LESS。
 
 以下是一个基于 Stylus 的实例，`div`将会匀加速向右移动：
 
@@ -77,5 +77,3 @@ inProgress: true
     {10% * i}
       transform: translate(i*i, 0)
 ```
-
-**STILL IN PROGRESS**

@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/BLogLayout.astro
+layout: ../layouts/BlogLayout.astro
 title: My Projects
 ---
 
@@ -59,5 +59,5 @@ A simple birthday-counting-down machine written in Vue3.
 - Website at [sites-list.netlify.app](https://sites-list.netlify.app)
 
 A website with a list of useful websites for developers.
- 
+
 Different from awesome lists, it mainly provide a shortcut to the correct website when you're looking for an official website or document for a framework or library.
