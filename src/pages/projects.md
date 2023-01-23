@@ -9,13 +9,37 @@ title: My Projects
 
 An extremely light, header-only but meanwhile strong, flexible and customizable C++ unit test library. (C++11 required)
 
-The library includes all the basic features of a unit test library, such as test definitions, assertions, and pretty output formatting.
+The library includes all the basic features of a unit test library, such as automatic test registration, assertions, and pretty output formatting.
+
+Here is an instance of a test file using Lightest:
+
+```cpp
+#include "lightest/lightest.h"
+
+TEST(Test) {
+  REQ(1, ==, 1); // Pass
+  REQ(1, ==, 2); // Fail
+}
+```
+
+Outputs go thus:
+
+```
+[Begin] Test
+    [Fail ] test.cpp:5: REQ [1 == 2] failed
+        + ACTUAL: 1
+        + EXPECTED: == 2
+[End  ] Test FAIL 3ms
+Done. 5ms used.
+```
+
+Outputs should be colorful if your platform is Windows, Linux, or MacOS.
 
 ## FlowScript
 
 - [Github Repo](https://github.com/zhangzheheng12345/flowscript)
 
-An embed interpreter of a special functional language of **FlowScript** (created by myself) written in Go.
+An Go embeded interpreter of a functional programming language of **FlowScript** (created by myself).
 
 This is my largest project (still it's small and simple).
 I started it for learning interpreter & compiler technology, practising Go, and for fun.
@@ -25,7 +49,7 @@ Here I put a short FlowScript program:
 <!-- highlight FlowScript as Ruby -->
 
 ```ruby
-def fibonacci a b begin
+def fibonacci a b begin # Output the fibonacci sequence between 1 and 10000
     add a b > echoln -
     add a b > smlr - 10000 > if - begin
         add a b > fibonacci b -
@@ -40,7 +64,7 @@ fibonacci 1 1
 - [GitHub Repo](https://github.com/zhangzheheng12345/visual-brainfuck-web)
 - Website at [visual-brainfuck-web.netlify.app](https://visual-brainfuck-web.netlify.app)
 
-An online brainfuck interpreter with a real-time visual memory.
+An online brainfuck interpreter with a limitless real-time visual memory.
 
 I am a lover of Brainfuck, so I started this project to debug Brainfuck easier.
 
