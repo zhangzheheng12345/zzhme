@@ -8,5 +8,5 @@ const { frontmatter } = Astro.props
 <MainLayout title={ frontmatter.title }>
   <h1 class="flex items-center">{ frontmatter.title } <ChineseBadge isCn={ frontmatter.cn }/></h1>
   <slot />
-  { frontmatter.inProgress ? <div class="w-100% p-10px font-900 text-center text-22px">STILL IN PROGRESS</div> : <div/> }
+  { frontmatter.inProgress ? <div class="flex items-center w-100% mt-30px font-900 text-center text-22px">—— STILL IN PROGRESS<span class="i-carbon-hammer p-5px text-inherit" />——</div> : <div/> }
 </MainLayout>
