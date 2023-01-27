@@ -1,3 +1,7 @@
+---
+import DarkLightToggler from './DarkLightToggler.vue'
+---
+
 <nav class="flex w-100% h-20px p-10px text-black dark:text-white">
   <a href="/" class="inline-block m-0">
     <img src="/logo.svg" alt="Home" class="dark:hidden" />
@@ -8,6 +12,7 @@
   <a href="/blog/" class="i-carbon-blog jump-icon  hover:scale-105" title="My Blog"></a>
   <a href="/projects" class="jump-link">Projects</a>
   <a href="/projects/" class="i-carbon-box jump-icon  hover:scale-105" title="My Projects"></a>
+  <DarkLightToggler client:load/>
   <a
     href="https://github/zhangzheheng12345"
     target="_blank"
