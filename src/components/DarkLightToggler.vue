@@ -1,7 +1,7 @@
 <template>
   <button
-    class="m-5px text-18px dark:bg-white hover:scale-105"
-    :class="isDark ? 'i-carbon-moon' : 'i-carbon-sun'"
+    class="m-5px text-18px bg-black dark:bg-white hover:scale-105"
+    :class="isDark ? 'i-uil-moon' : 'i-uil-sun'"
     :title="isDark ? 'Toggle to light mode' : 'Toggle to dark mode'"
     @click="toggleDark()"
   ></button>

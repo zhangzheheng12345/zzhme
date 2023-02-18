@@ -1,20 +1,22 @@
-/*
-Font Usage:
-  font-family: 'Noto Sans', Arial, sans-serif;
-  font-family: 'Palanquin Dark', Arial, sans-serif;
-  font-family: 'Roboto Mono', monospace;
-*/
+@css {
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Palanquin+Dark&family=Roboto+Mono&family=&display=swap');
+}
 
 *
   margin 0px
   padding 0px
   font-size 16px
-  font-family 'Noto Sans', Arial, sans-serif
   background-color #fff
   line-height 170%
   color #616161
   border-width 0px
   border-color #616161
+
+@css {
+  * {
+    font-family: "Noto Sans", Arial, sans-serif;
+  }
+}
 
 h1
 h2
@@ -22,9 +24,19 @@ h3
 h4
 h5
 h6
-  font-family 'Palanquin Dark', Arial, sans-serif
   line-height 180%
   color #111
+
+@css {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Palanquin Dark", Arial, sans-serif;
+  }
+}
 
 h1
   font-size 30px
@@ -76,11 +88,16 @@ pre
   border-radius 7px
   background-color #303033 !important
 pre *
-  background-color transparent
+  background-color transparent !important
   line-height 100%
-  font-family 'Roboto Mono', monospace
   font-size 14px
   margin 0px
+
+@css {
+  pre * {
+    font-family: "Roboto Mono", monospace;
+  }
+}
 
 .dark
   *
