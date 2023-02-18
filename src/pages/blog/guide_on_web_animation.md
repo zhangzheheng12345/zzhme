@@ -64,17 +64,17 @@ Here is an instance based on Stylus. The `div` should move right uniformly accel
 以下是一个基于 Stylus 的实例，`div`将会匀加速向右移动：
 
 ```html
-<div class="box lengthen"></div>
+<div class="box"></div>
 ```
 
 ```stylus
 .box
-  width: 10px
-  height: 10px
-  animation: lengthen 5s
+  width 10px
+  height 10px
+  animation lengthen 5s
 
 @keyframes lengthen
-  for i in 0..10
+  for i in 0 .. 10
     {10% * i}
-      transform: translate(i*i, 0)
+      transform translate(i * i, 0)
 ```

@@ -1,7 +1,9 @@
 ---
-import '../styles/global.css'
+import '../styles/fonts.css'
+import '../styles/global.styl'
 
-import Head from '../components/Head.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
 
 const { title } = Astro.props
 ---
@@ -10,22 +12,27 @@ const { title } = Astro.props
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{ title }</title>
+    <title>{title}</title>
   </head>
   <body>
-    <Head />
-    <div class="ma p-8% pt-12% fit-screen">
+    <Header />
+    <div class="ma p-8% pt-12% fit-screen min-h-90vh">
       <slot />
     </div>
+    <Footer />
   </body>
 </html>
 
-<style lang="stylus">
-  @media (min-width: 720px) and (max-width: 1000px)
-    .fit-screen
-      width: 700px
+<style>
+  @media (min-width: 720px) and (max-width: 1000px) {
+    .fit-screen {
+      width: 700px;
+    }
+  }
 
-  @media (min-width: 1000px)
-    .fit-screen
+  @media (min-width: 1000px) {
+    .fit-screen {
       width: 70%;
+    }
+  }
 </style>

@@ -19,17 +19,26 @@ Here is an instance of a test file using Lightest:
 TEST(Test) {
   REQ(1, ==, 1); // Pass
   REQ(1, ==, 2); // Fail
+  SUB(SubTest) {
+    SUB(SubSubTest) {
+      REQ(1, ==, 1);
+    }; // Semicolon required while defining sub tests
+  };
 }
 ```
 
 Outputs go thus:
 
 ```
-[Begin] Test
-    [Fail ] test.cpp:5: REQ [1 == 2] failed
-        + ACTUAL: 1
-        + EXPECTED: == 2
-[End  ] Test FAIL 3ms
+ BEGIN  Test
+   FAIL  test.cpp:5: REQ [1 == 2] failed
+      + ACTUAL: 1
+      + EXPECTED: == 2
+   BEGIN  SubTest
+     BEGIN  SubSubTest
+     PASS   SubSubTest 1ms
+   PASS   SubTest 2ms
+ FAIL   Test 3ms
 Done. 5ms used.
 ```
 

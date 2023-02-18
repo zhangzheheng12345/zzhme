@@ -4,6 +4,12 @@ const { isCn } = Astro.props
 
 <span>
   {
-    isCn ? <span class="border-2px rounded-3px text-12px lh-100% p-3px ml-5px">中文</span> : <span/> 
+    isCn ? (
+      <span class="border-2px rounded-3px text-12px lh-100% p-3px ml-5px">
+        中文
+      </span>
+    ) : (
+      <span />
+    )
   }
 </span>
