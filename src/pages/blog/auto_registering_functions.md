@@ -116,10 +116,11 @@ int main() {
 }
 ```
 
-We will also define a class to collect test data, so that we can return `false` (`0`) when tests all passed, and return `true` (`1`) when there is failure. So the final code should be...
+We will also define a class to collect test data, so that we can return `false` (`0`) when tests all passed, and return `true` (`1`) when there is failure. Later I will explain why we might need a specific class instead of just make the test function return `true` or `false`. So the final code should be...
 
 ```cpp
-// Before class Registering
+#include <vector>
+
 class Testing {
  public:
   void Fail() { failed = true; }
@@ -127,11 +128,48 @@ class Testing {
  private:
   bool failed = false;
 }
-#define ASSERT_EQ(value1, value2)                                       \
-  do {                                                                  \
-    if(value1 != value2) {                                              \
-      /* Some outputs */                                                \
-      testing.Fail(); /* Set the test to be failed */.                  \
-    }                                                                   \
+#define ASSERT_EQ(value1, value2)                     \
+  do {                                                \
+    if(value1 != value2) {                            \
+      /* Some outputs */                              \
+      testing.Fail(); /* Set the test to be failed */ \
+    }                                                 \
   } while(0)
+
+class Registering {
+ public:
+  Registering(void (*func)(Testing&)) { // Each test func will hold a testing object for data collecting etc.
+    funcList.push_back(func);
+  }
+  static bool RunAllTests() {
+    std::vector<Testing> testDataList(funcList.size());
+    unsigned int index = 0;
+    bool failed = false;
+    for(void (*name)(Testing&) func : funcList) {
+      func(testDataList.at(index));
+      failed |= testDataList.at(index).GetFailed(); // Collect failure
+    }
+    return failed;
+  }
+ private:
+  static std::vector<void(Testing&)> funcList;
+}
+std::vector<void(Testing&)> Registering::funcList(0);
+#define TEST(name)                                           \
+  void name(Testing& testing);                               \
+  Registering registering_ ## name (name);                   \
+  void name(Testing& testing)
+
+// Some tests:
+TEST(Test1) {
+  ASSERT_EQ(1, 1);
+}
+TEST(Test2) {
+  ASSERT_EQ(1, 2);
+}
+
+// Then in main:
+int main() {
+  return Registering::RunAllTests();
+}
 ```
