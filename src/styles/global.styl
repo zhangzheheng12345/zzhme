@@ -1,120 +1,96 @@
 @css {
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Palanquin+Dark&family=Roboto+Mono&family=&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Noto+Sans|Palanquin+Dark|Roboto+Mono');
 }
 
 *
-  margin 0px
-  padding 0px
-  font-size 16px
-  background-color #fff
-  line-height 170%
-  color #616161
-  border-width 0px
-  border-color #616161
+  margin: 0px
+  padding: 0px
+  font-size: 16px
+  background-color: #fff
+  line-height: 170%
+  color: #616161
+  border-width: 0px
+  border-color: #616161
   transition: all 0.3s ease-in-out
+  font-family: 'Noto Sans', Arial, sans-serif
 
-@css {
-  * {
-    font-family: "Noto Sans", Arial, sans-serif;
-  }
-}
-
-h1
-h2
-h3
-h4
-h5
-h6
-  line-height 180%
-  color #111
-
-@css {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Palanquin Dark", Arial, sans-serif;
-  }
-}
+h1, h2, h3, h4, h5, h6
+  line-height: 180%
+  color: #111
+  font-family: 'Palanquin Dark', Arial, sans-serif
 
 h1
-  font-size 30px
+  font-size: 30px
+
 h2
-  font-size 26px
+  font-size: 26px
+
 h3
-  font-size 24px
+  font-size: 24px
+
 h4
-  font-size 22px
+  font-size: 22px
+
 h5
-  font-size 20px
+  font-size: 20px
+
 h6
-  font-size 18px
+  font-size: 18px
 
 p
-  margin 8px
-  margin-top 12px
-  margin-bottom 8px
+  margin: 8px
+  margin-top: 12px
+  margin-bottom: 8px
 
 a
-  text-decoration none
-  color #000
+  text-decoration: none
+  color: #000
+
 a:hover
-  text-decoration underline
+  text-decoration: underline
 
 ul > li::before
-  content '· '
-  font-weight 900
+  content: '· '
+  font-weight: 900
 
-ul
-ol
-  margin 10px
+ul, ol
+  margin: 10px
 
 img
-  padding 10px
+  padding: 10px
 
 code
-  background-color #dddddf
-  color #000
-  margin 4px
-  padding 3px
-  line-height 100%
-  font-size 14px
-pre
-  margin 7px
-  padding 5px
-  line-height 110%
-  padding-left 10px
-  border-radius 7px
-  background-color #303033 !important
-pre *
-  background-color transparent !important
-  line-height 100%
-  font-size 14px
-  margin 0px
+  background-color: #dddddf
+  color: #000
+  margin: 4px
+  padding: 3px
+  line-height: 100%
+  font-size: 14px
 
-@css {
-  pre * {
-    font-family: "Roboto Mono", monospace;
-  }
-}
+pre
+  margin: 7px
+  padding: 5px
+  line-height: 110%
+  padding-left: 10px
+  border-radius: 7px
+  background-color: #303033 !important
+
+pre *
+  background-color: transparent !important
+  line-height: 100%
+  font-size: 14px
+  margin: 0px
+  font-family: 'Roboto Mono', monospace
 
 .dark
   *
-    background-color #111
-    color #888
-    border-color #888
+    background-color: #111
+    color: #888
+    border-color: #888
 
-  a
-  h1
-  h2
-  h3
-  h4
-  h5
-  h6
-    color #fff
+  a, h1, h2, h3, h4, h5, h6
+    color: #fff
 
   code
-    background-color #38383b
-    color #fff
+    background-color: #38383b
+    color: #fff

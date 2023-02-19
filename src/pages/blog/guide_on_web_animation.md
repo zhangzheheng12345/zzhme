@@ -61,13 +61,13 @@ Among three above, I individually recommend Stylus more, since it's very succinc
 
 Here is an instance based on Stylus. The `div` should move right uniformly accelerated.
 
-以下是一个基于 Stylus 的实例，`div`将会匀加速向右移动：
+Here is an instance based in Stylus，`div` will move to right in uniform acceleration：
 
 ```html
 <div class="box"></div>
 ```
 
-```stylus
+```styl
 .box
   width 10px
   height 10px
