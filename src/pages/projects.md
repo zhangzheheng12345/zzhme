@@ -27,46 +27,22 @@ TEST(Test) {
 }
 ```
 
-Outputs go thus:
+Outputs go thus (should have pretty colors if your platform is Windows, MacOS or Linux):
 
 ```
  BEGIN  Test
    FAIL  test.cpp:5: REQ [1 == 2] failed
-      + ACTUAL: 1
-      + EXPECTED: == 2
+      ├──── ACTUAL:    1
+      └── EXPECTED: == 2
    BEGIN  SubTest
      BEGIN  SubSubTest
      PASS   SubSubTest 1ms
    PASS   SubTest 2ms
  FAIL   Test 3ms
-Done. 5ms used.
+ ✕ FAILED ✕  5ms used
 ```
 
 Outputs should be colorful if your platform is Windows, Linux, or MacOS.
-
-## FlowScript
-
-- [Github Repo](https://github.com/zhangzheheng12345/flowscript)
-
-An Go embeded interpreter of a functional programming language of **FlowScript** (created by myself).
-
-This is my largest project (still it's small and simple).
-I started it for learning interpreter & compiler technology, practising Go, and for fun.
-
-Here I put a short FlowScript program:
-
-<!-- highlight FlowScript as Ruby -->
-
-```ruby
-def fibonacci a b begin # Output the fibonacci sequence between 1 and 10000
-    add a b > echoln -
-    add a b > smlr - 10000 > if - begin
-        add a b > fibonacci b -
-    end
-end
-echoln "fibonacci begins ..."
-fibonacci 1 1
-```
 
 ## Visual Brainfuck Web
 
