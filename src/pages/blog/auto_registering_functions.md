@@ -2,7 +2,6 @@
 layout: ../../layouts/BlogLayout.astro
 title: Auto Registering Functions in C++
 time: 2023.2.19
-inProgress: true
 ---
 
 Registering functions automically is quite a common-used tech especially in C/C++ unit testing framework. Certainly you won't feel happy to write such code:
