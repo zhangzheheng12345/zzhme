@@ -1,9 +1,9 @@
 <template>
   <button
-    class="m-5px text-18px bg-black dark:bg-white"
+    class="m-5px text-18px dark:bg-white"
     :class="isDark ? 'i-uil-moon' : 'i-uil-sun'"
     :title="isDark ? 'Toggle to light mode' : 'Toggle to dark mode'"
-    @click="toggleDark()"
+    @click="($event) => toggleDark()"
   ></button>
 </template>
 

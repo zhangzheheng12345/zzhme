@@ -22,7 +22,7 @@ Currently I'm interested in:
 
 ## To Reach Me
 
-Find me on [my GitHub](https://github.com/zhangzheheng12345), [my Unsplash](https://upsplash.com/@zheheng_zhang), and mail me to _zhangzheheng12345@163.com_.
+Find me on [my GitHub](https://github.com/zhangzheheng12345), [my Unsplash](https://upsplash.com/@zheheng_zhang), and mail me to <u>zhangzheheng12345@163.com</u>.
 
 ## About This Website
 
