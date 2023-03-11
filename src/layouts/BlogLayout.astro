@@ -10,11 +10,11 @@ const { frontmatter } = Astro.props
     {frontmatter.title}
     <ChineseBadge isCn={frontmatter.cn} />
   </h1>
-  <p class="pl-10px">{frontmatter.time}</p>
+  <p class="pl-10px text-18px">{frontmatter.time}</p>
   <slot />
   {
     frontmatter.inProgress ? (
-      <div class="flex items-center w-100% mt-30px font-900 justify-center text-22px">
+      <div class="flex items-center w-100% mt-30px font-900 justify-center text-20px">
         —— STILL IN PROGRESS
         <span class="i-uil-jackhammer m-4px text-inherit dark:bg-white" />
         ——
