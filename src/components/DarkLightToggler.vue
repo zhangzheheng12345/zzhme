@@ -5,7 +5,7 @@
     @click="($event) => toggleDark()"
   >
     <span
-      class="inline-block text-18px dark:bg-white scale-80"
+      class="inline-block text-18px dark:bg-white scale-80 trans"
       :class="
         isDark ? 'i-uil-moon translate-x-11px' : 'i-uil-sun  translate-x--10px'
       "
@@ -18,7 +18,7 @@ import { isDark, toggleDark } from '../logic/isDark'
 </script>
 
 <style scoped>
-span {
+.trans {
   transition: transform 0.3s ease-in-out;
 }
 </style>
