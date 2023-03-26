@@ -5,7 +5,7 @@ import MainLayout from '../../layouts/MainLayout.astro'
 const blogs = await Astro.glob('./*.md')
 ---
 
-<MainLayout frontmatter={{ title: 'My Blogs' }}>
+<MainLayout title={'My Blogs'}>
   <h1>My Blog</h1>
   <ol>
     {
