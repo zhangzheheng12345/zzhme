@@ -19,6 +19,6 @@ import { isDark, toggleDark } from '../logic/isDark'
 
 <style scoped>
 .trans {
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.15s ease-in-out;
 }
 </style>

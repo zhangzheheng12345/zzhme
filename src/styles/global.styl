@@ -80,6 +80,20 @@ pre *
   margin: 0px
   font-family: 'Roboto Mono', monospace
 
+// scrollbar style
+::-webkit-scrollbar
+  width: 5px
+  height: 5px
+  border-radius: 10px
+
+::-webkit-scrollbar-track
+  border-radius: 10px
+  background-color: rgb(188, 201, 226)
+
+::-webkit-scrollbar-thumb
+  border-radius: 10px
+  background-color: rgb(55, 87, 145)
+
 .dark
   *
     background-color: rgb(18, 43, 65)
@@ -92,3 +106,9 @@ pre *
   code
     background-color: #38383b
     color: #fff
+
+  ::-webkit-scrollbar-track
+    background-color: rgb(55, 87, 145)
+
+  ::-webkit-scrollbar-thumb
+    background-color: rgb(188, 201, 226)

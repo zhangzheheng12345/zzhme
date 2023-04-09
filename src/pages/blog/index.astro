@@ -2,7 +2,9 @@
 import ChineseBadge from '../../components/ChineseBadge.astro'
 import MainLayout from '../../layouts/MainLayout.astro'
 
-const blogs = await Astro.glob('./*.md')
+import { SortDate } from '../../logic/dateSort'
+
+const blogs = SortDate(await Astro.glob('./*.md'))
 ---
 
 <MainLayout title={'My Blogs'}>
@@ -11,7 +13,7 @@ const blogs = await Astro.glob('./*.md')
     {
       blogs.map((blog, index) => (
         <li class="flex items-center flex-wrap">
-          <span class="mr-10px">{blog.frontmatter.time}</span>
+          <span class="mr-10px">{blog.frontmatter.date}</span>
           <a href={blog.url}>{blog.frontmatter.title}</a>
           <ChineseBadge isCn={blog.frontmatter.cn} />
           {blog.frontmatter.inProgress ? (

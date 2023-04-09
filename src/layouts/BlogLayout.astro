@@ -10,7 +10,7 @@ const { frontmatter } = Astro.props
     {frontmatter.title}
     <ChineseBadge isCn={frontmatter.cn} />
   </h1>
-  <p class="pl-10px text-18px">{frontmatter.time}</p>
+  <p class="pl-10px text-18px">{frontmatter.date}</p>
   <slot />
   {
     frontmatter.inProgress ? (

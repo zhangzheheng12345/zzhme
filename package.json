@@ -26,6 +26,7 @@
     "prettier-plugin-astro": "^0.7.2",
     "prettier-plugin-stylus": "^0.0.1-beta.8",
     "stylus": "^0.59.0",
-    "unocss": "^0.48.3"
+    "unocss": "^0.48.3",
+    "vitest": "^0.29.8"
   }
 }
