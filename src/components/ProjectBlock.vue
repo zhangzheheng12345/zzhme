@@ -25,7 +25,6 @@ const props = defineProps<{
 <style>
 .dark .base-block {
   background-color: rgba(256, 256, 256, 0.08);
-  backdrop-filter: saturate(180%) blur(20px);
 }
 .base-block {
   background-color: rgba(26, 136, 240, 0.1);

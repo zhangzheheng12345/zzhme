@@ -259,4 +259,4 @@ Now the auto registration of sub test can work well!
 
 Here I provide a simple way to accomplish auto function registration & auto running. Remove those about unit testing, such as the failure collecting, and you'll meanwhile get a general way to apply this system to various situations.
 
-My unit testing framework, [Lightest](https://github.com/zhangzheheng12345/Lightest), is a practice of this. It also own a more deeply use of 'caller strategy', realizing a unified combination of configuration, testing, data analyzing, and multi-thread testing. Welcome to look at this project, and also think of & remark the design mode inside it!
+My unit testing framework, [Lightest](https://github.com/zhangzheheng12345/Lightest), is a practice of this. It also owns a more deeply use of 'caller strategy', realizing a unified combination of configuration, testing, data analyzing, and multi-thread testing. Welcome to look at this project, and also think of & remark the design mode inside it!
