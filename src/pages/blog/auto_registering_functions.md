@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/BlogLayout.astro
 title: Auto Registering Functions in C++
-date: 2023.2.19
+date: 2023/02/19
 ---
 
 Registering functions automically is quite a common-used tech especially in C/C++ unit testing framework. Certainly you won't feel happy to write such code:
@@ -249,7 +249,7 @@ Then update macro of `TEST` and add the macro for defining sub tests, after defi
 
 Analyzing details:
 
-* Use standard library of `function`, since function poiter is merely for global functions, and for those lambda functions in smaller scope, meanwhile carrying outside context, they are in other types. Use `function<...>` to unify the situations.
+* Use standard library of `function`, since function pointer is merely for global functions, and for those lambda functions in smaller scope, meanwhile carrying outside context, they are in other types. Use `function<...>` to unify the situations.
 * Use lambda funcions for sub tests, since it's the only way to define functions inside functions. Besides, use 'caller stategy' for sub tests, because, as you can see, the functions of sub test is actually set after the registration, so we have to register a 'caller agency' as a middle preson.
 * Pay attention to the life cycle problem. The sub test function is called after the base test function returns, so its life cycle should be longer. Make it simpler; let's just declare it as `static` so that it will stay alive in all time.
 

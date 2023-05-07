@@ -13,7 +13,9 @@ const blogs = SortDate(await Astro.glob('./*.md'))
     {
       blogs.map((blog, index) => (
         <li class="flex items-center flex-wrap">
-          <span class="mr-10px">{blog.frontmatter.date}</span>
+          <i>
+            <time class="mt-20px mr-20px">{blog.frontmatter.date}</time>
+          </i>
           <a href={blog.url}>{blog.frontmatter.title}</a>
           <ChineseBadge isCn={blog.frontmatter.cn} />
           {blog.frontmatter.inProgress ? (

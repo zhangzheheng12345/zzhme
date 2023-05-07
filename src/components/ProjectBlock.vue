@@ -24,10 +24,12 @@ const props = defineProps<{
 
 <style>
 .dark .base-block {
-  background-color: rgba(256, 256, 256, 0.08);
+  background-color: rgba(102, 145, 236, 0.185);
+  box-shadow: 0px 0px 13px rgba(49, 75, 168, 0.45);
 }
 .base-block {
-  background-color: rgba(26, 136, 240, 0.1);
+  background-color: rgba(18, 135, 245, 0.06);
+  box-shadow: 0px 0px 12px rgba(88, 114, 199, 0.2);
 }
 
 .base-block * {
