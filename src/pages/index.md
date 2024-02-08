@@ -1,11 +1,13 @@
 ---
-layout: ../layouts/MainPage.astro
+layout: ../layouts/HomePage.astro
 title: Zheheng Zhang
 ---
 
-# Zheheng Zhang
+<img src="/avatar.png" class="rounded-50% w-45% min-w-200px shadow-lg hover:shadow-xl float-right my-10px" />
 
-👋 Hi! I'm **Zheheng Zhang**.
+<h1 class="text-2.8rem">Zheheng Zhang</h1>
+
+👋 Hi! I'm _Zheheng Zhang_.
 
 A lover of programming and open source, as well as a senior high school student.
 

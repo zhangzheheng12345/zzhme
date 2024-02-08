@@ -2,39 +2,52 @@
 
 ---
 
-<nav class="flex h-auto w-100% items-baseline p-10px dark:text-white">
-  <a
-    href="/"
-    class="inline-block m-0 p-2px scale-80 hover:translate-y--3px transition-160"
-    title="Home"
+<div class="ma max-w-750px">
+  <nav
+    class="flex items-center pr-10px pl-2px m-10px shadow-lg hover:shadow-xl transition-160"
   >
-    <img src="/logo.svg" alt="Home" class="inline-block dark:hidden" />
-    <img src="/logo_dark.svg" alt="Home" class="hidden dark:inline-block" />
-  </a>
-  <div class="flex-auto"></div>
-  <a
-    href="/projects/"
-    class="i-lucide-box hover:translate-y--3px transition-160"
-    title="My Projects"></a>
-  <a
-    href="https://unsplash.com/@zheheng_zhang"
-    class="i-tabler-brand-unsplash hover:translate-y--3px transition-160"
-    title="My Unsplash"></a>
-  <a
-    href="https://github/zhangzheheng12345"
-    target="_blank"
-    class="i-lucide-github hover:translate-y--3px transition-160"
-    title="My GitHub"></a>
-  <a href="/about/" class="i-lucide-info hover:translate-y--3px transition-160"
-  ></a>
-</nav>
+    <a
+      href="/"
+      class="inline-block m-0 p-3px scale-80 translate-y--2px hover:translate-y--4px transition-160 mt-7px"
+      title="Home"
+    >
+      <img src="/logo.svg" alt="Home" class="inline-block dark:hidden" />
+      <img src="/logo_dark.svg" alt="Home" class="hidden dark:inline-block" />
+    </a>
+    <div class="flex-auto"></div>
+    <a
+      href="/projects/"
+      class="i-lucide-box hover:translate-y--3px transition-160"
+      title="My Projects"></a>
+    <a
+      href="https://unsplash.com/@zheheng_zhang"
+      target="_blank"
+      class="i-tabler-brand-unsplash hover:translate-y--3px transition-160"
+      title="My Unsplash"></a>
+    <a
+      href="https://github/zhangzheheng12345"
+      target="_blank"
+      class="i-lucide-github hover:translate-y--3px transition-160"
+      title="My GitHub"></a>
+    <a
+      href="/about/"
+      class="i-lucide-info hover:translate-y--3px transition-160"></a>
+  </nav>
+</div>
 
 <style>
   a {
-    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
     font-size: 18px;
+    line-height: 100%;
   }
   img {
     padding: 0px;
+  }
+  nav {
+    border-radius: 8px;
+    background-color: rgba(240, 240, 240, 0.8);
+    backdrop-filter: blur(6px);
   }
 </style>

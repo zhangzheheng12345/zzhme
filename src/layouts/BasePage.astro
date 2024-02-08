@@ -1,9 +1,9 @@
 ---
 import '../styles/global.css'
 
-import NavBar from '../components/NavBar.astro'
 import Footer from '../components/Footer.astro'
 import BaseHead from '../components/BaseHead.astro'
+import NavBar from '../components/NavBar.astro'
 
 const { title } = Astro.props
 ---
@@ -15,9 +15,7 @@ const { title } = Astro.props
   </head>
   <body>
     <NavBar />
-    <div class="ma p-8% max-w-700px min-h-90vh">
-      <slot />
-    </div>
+    <slot />
     <Footer />
   </body>
 </html>

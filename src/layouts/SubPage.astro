@@ -1,0 +1,11 @@
+---
+import BasePage from './BasePage.astro'
+
+const { frontmatter } = Astro.props
+---
+
+<BasePage title={frontmatter.title}>
+  <div class="ma p-8% max-w-750px min-h-90vh">
+    <slot />
+  </div>
+</BasePage>

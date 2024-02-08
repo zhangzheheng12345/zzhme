@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/MainPage.astro
+layout: ../layouts/SubPage.astro
 title: About My Site
 ---
 
