@@ -1,70 +1,12 @@
 ---
-layout: ../layouts/BlogLayout.astro
+layout: ../layouts/MainPage.astro
 title: My Projects
 ---
 
-import ProjectBlock from '../components/ProjectBlock.vue'
+# <span class="i-lucide-boxes hover:rotate-120 hover:translate-y-10px translate-y-6px transition-310 mr-3px"></span> My Projects
 
-<ProjectBlock
-  name="Lightest"
-  repoLink="https://github.com/zhangzheheng12345/Lightest"
->
+import ProjectList from '../components/ProjectList.vue'
 
-An extremely light, header-only but meanwhile strong, flexible and customizable C++ unit test library. (C++11 required)
+Let ideas bloom. 🌻
 
-The library includes all the basic features of a unit test library, such as automatic test registration, assertions, and pretty output formatting.
-
-Here is an instance of a test file using Lightest:
-
-```cpp
-#include "lightest/lightest.h"
-
-TEST(Test) {
-  REQ(1, ==, 1); // Pass
-  REQ(1, ==, 2); // Fail
-  SUB(SubTest) {
-    SUB(SubSubTest) {
-      REQ(1, ==, 1);
-    }; // Semicolon required while defining sub tests
-  };
-}
-```
-
-Outputs go thus (should have pretty colors if your platform is Windows, MacOS or Linux):
-
-```
- BEGIN  Test
-   FAIL  test.cpp:5: REQ [1 == 2] failed
-      ├──── ACTUAL:    1
-      └── EXPECTED: == 2
-   BEGIN  SubTest
-     BEGIN  SubSubTest
-     PASS   SubSubTest 1ms
-   PASS   SubTest 2ms
- FAIL   Test 3ms
- ✕ FAILED ✕  5ms used
-```
-
-Outputs should be colorful if your platform is Windows, Linux, or MacOS.
-
-</ProjectBlock>
-
-<ProjectBlock name="Visual Brainfuck Web" repoLink="https://github.com/zhangzheheng12345/visual-brainfuck-web" websiteLink="https://visual-brainfuck-web.netlify.app">
-
-An online Brainfuck interpreter with a limitless real-time visual memory. Make debugging brainfuck **easier**. (though Brainfuck is **NEVER** easy)
-
-</ProjectBlock>
-
-<ProjectBlock name="Birthday Count Downer" repoLink="https://github.com/zhangzheheng12345/birthday-count-downer" websiteLink="https://birthday-count-downer.netlify.app">
-
-A simple birthday-counting-down machine.
-
-</ProjectBlock>
-
-<ProjectBlock name="Sites List" repoLink="https://github.com/zhangzheheng12345/sites-list" websiteLink="https://sites-list.netlify.app">
-
-A website with a list of useful websites for developers.
-
-Different from awesome lists, it mainly provide a shortcut to the correct website when you're looking for an official website or document for a framework or library.
-
-</ProjectBlock>
+<ProjectList client:load />

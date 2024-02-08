@@ -1,10 +1,9 @@
 ---
-import MainLayout from './MainLayout.astro'
+import MainLayout from './BasePage.astro'
 
 const { frontmatter } = Astro.props
 ---
 
 <MainLayout title={frontmatter.title}>
-  <h1>{frontmatter.title}</h1>
   <slot />
 </MainLayout>

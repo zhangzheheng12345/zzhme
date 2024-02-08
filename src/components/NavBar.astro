@@ -1,27 +1,32 @@
 ---
-import DarkLightToggler from './DarkLightToggler.vue'
+
 ---
 
 <nav class="flex h-auto w-100% items-baseline p-10px dark:text-white">
-  <a href="/" class="inline-block m-0 p-2px scale-80">
+  <a
+    href="/"
+    class="inline-block m-0 p-2px scale-80 hover:translate-y--3px transition-160"
+    title="Home"
+  >
     <img src="/logo.svg" alt="Home" class="inline-block dark:hidden" />
     <img src="/logo_dark.svg" alt="Home" class="hidden dark:inline-block" />
   </a>
   <div class="flex-auto"></div>
   <a
-    href="/blog/"
-    class="i-uil-document-layout-left hover:scale-105 dark:bg-white"
-    title="My Blog"></a>
-  <a
     href="/projects/"
-    class="i-uil-inbox hover:scale-105 dark:bg-white"
+    class="i-lucide-box hover:translate-y--3px transition-160"
     title="My Projects"></a>
-  <DarkLightToggler client:only />
+  <a
+    href="https://unsplash.com/@zheheng_zhang"
+    class="i-tabler-brand-unsplash hover:translate-y--3px transition-160"
+    title="My Unsplash"></a>
   <a
     href="https://github/zhangzheheng12345"
     target="_blank"
-    class="i-uil-github-alt dark:bg-white hover:scale-105"
+    class="i-lucide-github hover:translate-y--3px transition-160"
     title="My GitHub"></a>
+  <a href="/about/" class="i-lucide-info hover:translate-y--3px transition-160"
+  ></a>
 </nav>
 
 <style>

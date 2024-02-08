@@ -1,32 +1,16 @@
 ---
-layout: ../layouts/MainPageLayout.astro
-title: Hi! I'm Zheheng Zhang!
+layout: ../layouts/MainPage.astro
+title: Zheheng Zhang
 ---
 
-I'm a lover of programming and open source, and a junior high school student.
-I look forward to becoming a programmer in the future, so now I'm making efforts.
+# Zheheng Zhang
 
-On my personal website, you can read my blog [here](/blog/), and also take a look at [my project list](/projects).
+👋 Hi! I'm **Zheheng Zhang**.
 
-## My Interests
+A lover of programming and open source, as well as a senior high school student.
 
-Currently I'm interested in:
+Currently focusing on _front-end tech_, _Python_, _C++_, _Rust_, and learning _machine learning_.
 
-- Go
-- C++
-- HTML & JavaScript & CSS & Typescript & Vue & Astro (in short that's front end tech)
-- Python
-- Haskell
-- Brainfuck (just for fun)
-- Dev tools making
+Here is [<span class="i-lucide-box badge-icon-down mx-2px"></span>my project list](/projects).
 
-## To Reach Me
-
-Find me on [my GitHub](https://github.com/zhangzheheng12345), [my Unsplash](https://upsplash.com/@zheheng_zhang), and mail me to <u>zhangzheheng12345@163.com</u>.
-
-## About This Website
-
-This website is built using Astro, Vue, and UnoCSS, deployed on Netlify.
-It's still in progress.
-
-If you like this page, go to [GitHub repo of my personal website](https://github.com/zhangzheheng/zzhme) to take a look, star, or fork.
+Find me on [<span class="i-lucide-github badge-icon m1-2px translate-y-2px"></span>my GitHub](https://github.com/zhangzheheng12345), [<span class="i-tabler-brand-unsplash badge-icon-down mr-2px"></span>my Unsplash](https://upsplash.com/@zheheng_zhang), and mail me to <u><span class="i-lucide-mailbox badge-icon-down mr-2px"></span>zhangzheheng12345@163.com</u>.
