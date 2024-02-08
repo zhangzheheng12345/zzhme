@@ -1,11 +1,13 @@
 ---
 import BasePage from './BasePage.astro'
 import CoverImg from '../components/CoverImg.vue'
+import NavBar from '../components/NavBar.astro'
 
 const { frontmatter } = Astro.props
 ---
 
 <BasePage title={frontmatter.title}>
+  <NavBar bgType="white" />
   <CoverImg client:load />
   <div class="ma p-8% max-w-750px min-h-90vh">
     <slot />

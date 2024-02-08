@@ -36,16 +36,11 @@ const fetchPhoto = () => {
 
 const requestUnplash = () =>
   client.collections.getPhotos({ collectionId: 'YC3VHrVE-D0' }).then((res) => {
-    loading.value = false
-    if (res.errors) {
-      // do something
-    } else {
-      console.log(res.response)
+    if (!res.errors) {
       const photo_ =
         res.response.results[
           Math.floor(Math.random() * res.response.results.length)
         ]
-      console.log(photo_)
       photo.value.url =
         photo_.urls.raw +
         `&${window.innerWidth > window.innerHeight * 0.4 ? 'w=' + window.innerWidth : 'h=' + window.innerHeight * 0.4}&auto=format`

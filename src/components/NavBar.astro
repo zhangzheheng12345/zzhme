@@ -1,10 +1,15 @@
 ---
+interface Props {
+  bgType: 'white' | 'gray'
+}
 
+const { bgType } = Astro.props
 ---
 
 <div class="ma max-w-750px">
   <nav
-    class="flex items-center pr-10px pl-2px m-10px shadow-lg hover:shadow-xl transition-160"
+    class={'flex items-center pr-10px pl-2px m-10px shadow-lg hover:shadow-xl transition-160 ' +
+      bgType}
   >
     <a
       href="/"
@@ -47,7 +52,12 @@
   }
   nav {
     border-radius: 8px;
-    background-color: rgba(240, 240, 240, 0.8);
     backdrop-filter: blur(6px);
+  }
+  .white {
+    background-color: rgba(240, 240, 240, 0.8);
+  }
+  .gray {
+    background-color: rgba(3, 2, 3, 0.03);
   }
 </style>
