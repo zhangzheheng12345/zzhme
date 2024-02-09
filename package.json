@@ -16,9 +16,7 @@
     "@astrojs/vue": "^4.0.8",
     "@vueuse/core": "^10.7.2",
     "astro": "^4.3.3",
-    "blurhash": "^2.0.5",
     "dayjs": "^1.11.10",
-    "unsplash-js": "^7.0.19",
     "vue": "^3.4.15"
   },
   "devDependencies": {

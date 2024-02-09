@@ -1,12 +1,8 @@
 <template>
-  <ul>
-    <li
-      v-for="(item, index) in projects"
-      class="transition-400"
-      :style="{
-        opacity: `${showUp.opacities.value[index]}`,
-        transform: `translate(0, ${showUp.translations.value[index]}px)`
-      }"
+  <div class="slide-enter-content">
+    <div
+      v-for="item in projects"
+      @click="jump('https://github.com/' + item.repoLink)"
     >
       <div
         class="base-block rounded-5px p-10px mt-2rem mb-2rem p-20px shadow-lg hover:shadow-xl transition-120"
@@ -44,18 +40,16 @@
         </div>
         <div class="mt-0.9rem ml-1.3rem">{{ item.description }}</div>
       </div>
-    </li>
-  </ul>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
-import { useShowUp } from '../logics/showUp'
 import { projects } from '../logics/projects'
-import { onMounted } from 'vue'
 
-const showUp = useShowUp(projects.length, 240)
-
-onMounted(() => showUp.translate())
+const jump = (url: string) => {
+  window.open(url)
+}
 </script>
 
 <style scoped>

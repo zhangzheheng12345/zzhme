@@ -3,9 +3,14 @@ layout: ../layouts/HomePage.astro
 title: Zheheng Zhang
 ---
 
-<img src="/avatar.png" class="rounded-50% w-45% min-w-200px shadow-lg hover:shadow-xl float-right my-10px" />
+<img
+  src="/avatar.png"
+  class="rounded-50% w-45% min-w-200px shadow-xl hover:shadow-2xl my-10px float-right"
+/>
 
-<h1 class="text-2.8rem">Zheheng Zhang</h1>
+<h1 class="text-2.8rem border-0 border-l-3px pl-1.05rem border-solid border-mid-gray">
+  Zheheng Zhang
+</h1>
 
 👋 Hi! I'm _Zheheng Zhang_.
 
@@ -15,4 +20,4 @@ Currently focusing on _front-end tech_, _Python_, _C++_, _Rust_, and learning _m
 
 Here is [<span class="i-lucide-box badge-icon-down mx-2px"></span>my project list](/projects).
 
-Find me on [<span class="i-lucide-github badge-icon m1-2px translate-y-2px"></span>my GitHub](https://github.com/zhangzheheng12345), [<span class="i-tabler-brand-unsplash badge-icon-down mr-2px"></span>my Unsplash](https://upsplash.com/@zheheng_zhang), and mail me to <u><span class="i-lucide-mailbox badge-icon-down mr-2px"></span>zhangzheheng12345@163.com</u>.
+Find me on [<span class="i-lucide-github badge-icon m1-2px translate-y-2px"></span>GitHub](https://github.com/zhangzheheng12345), [<span class="i-tabler-brand-unsplash badge-icon-down mr-2px"></span>Unsplash](https://upsplash.com/@zheheng_zhang), and mail me to <u><span class="i-lucide-mailbox badge-icon-down mr-2px"></span>zhangzheheng12345@163.com</u>.

@@ -1,44 +1,34 @@
 ---
-interface Props {
-  bgType: 'white' | 'gray'
-}
 
-const { bgType } = Astro.props
 ---
 
-<div class="ma max-w-750px">
-  <nav
-    class={'flex items-center pr-10px pl-2px m-10px shadow-lg hover:shadow-xl transition-160 ' +
-      bgType}
+<nav class="flex items-center pr-10px pl-2px m-10px">
+  <a
+    href="/"
+    class="inline-block m-0 p-3px scale-80 translate-y--2px hover:translate-y--4px transition-160 mt-7px"
+    title="Home"
   >
-    <a
-      href="/"
-      class="inline-block m-0 p-3px scale-80 translate-y--2px hover:translate-y--4px transition-160 mt-7px"
-      title="Home"
-    >
-      <img src="/logo.svg" alt="Home" class="inline-block dark:hidden" />
-      <img src="/logo_dark.svg" alt="Home" class="hidden dark:inline-block" />
-    </a>
-    <div class="flex-auto"></div>
-    <a
-      href="/projects/"
-      class="i-lucide-box hover:translate-y--3px transition-160"
-      title="My Projects"></a>
-    <a
-      href="https://unsplash.com/@zheheng_zhang"
-      target="_blank"
-      class="i-tabler-brand-unsplash hover:translate-y--3px transition-160"
-      title="My Unsplash"></a>
-    <a
-      href="https://github/zhangzheheng12345"
-      target="_blank"
-      class="i-lucide-github hover:translate-y--3px transition-160"
-      title="My GitHub"></a>
-    <a
-      href="/about/"
-      class="i-lucide-info hover:translate-y--3px transition-160"></a>
-  </nav>
-</div>
+    <img src="/logo.svg" alt="Home" class="inline-block dark:hidden" />
+    <img src="/logo_dark.svg" alt="Home" class="hidden dark:inline-block" />
+  </a>
+  <div class="flex-auto"></div>
+  <a
+    href="/projects/"
+    class="i-lucide-box hover:translate-y--3px transition-160"
+    title="My Projects"></a>
+  <a
+    href="https://unsplash.com/@zheheng_zhang"
+    target="_blank"
+    class="i-tabler-brand-unsplash hover:translate-y--3px transition-160"
+    title="My Unsplash"></a>
+  <a
+    href="https://github/zhangzheheng12345"
+    target="_blank"
+    class="i-lucide-github hover:translate-y--3px transition-160"
+    title="My GitHub"></a>
+  <a href="/about/" class="i-lucide-info hover:translate-y--3px transition-160"
+  ></a>
+</nav>
 
 <style>
   a {
@@ -49,15 +39,5 @@ const { bgType } = Astro.props
   }
   img {
     padding: 0px;
-  }
-  nav {
-    border-radius: 8px;
-    backdrop-filter: blur(6px);
-  }
-  .white {
-    background-color: rgba(240, 240, 240, 0.8);
-  }
-  .gray {
-    background-color: rgba(3, 2, 3, 0.03);
   }
 </style>
