@@ -1,7 +1,12 @@
 import { ref } from 'vue'
 import { sleep } from './showUp'
 
-const words = ['写点什么。', '漫游。', '北京胡同。', '第五和第七大道。']
+const words = [
+  'Hi!',
+  "I'm Zheheng Zhang!",
+  'From Zhejiang, China',
+  'Welcome to my site!'
+]
 
 export const useTyper = () => {
   return {
@@ -12,12 +17,12 @@ export const useTyper = () => {
       const typeWord = async () => {
         for (let j = 0; j <= words[i].length; j++) {
           this.typer.value = words[i].slice(0, j)
-          await sleep(90)
+          await sleep(75)
         }
         await sleep(1500)
         for (let j = words[i].length; j >= 0; j--) {
           this.typer.value = words[i].slice(0, j)
-          await sleep(45)
+          await sleep(15)
         }
         await sleep(750)
       }

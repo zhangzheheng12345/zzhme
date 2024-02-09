@@ -16,9 +16,20 @@
 
 :root {
   color: var(--deep-gray);
-  font-size: 1.05rem;
   font-family: var(--mono-basic);
-  line-height: 160%;
+}
+
+@media (min-width: 440px) {
+  :root {
+    font-size: 1.01rem;
+    line-height: 160%;
+  }
+}
+@media (max-width: 439px) {
+  :root {
+    font-size: 0.92rem;
+    line-height: 150%;
+  }
 }
 
 * {

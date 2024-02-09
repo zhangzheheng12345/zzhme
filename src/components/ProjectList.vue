@@ -3,6 +3,7 @@
     <div
       v-for="item in projects"
       @click="jump('https://github.com/' + item.repoLink)"
+      style="--start: 400ms"
     >
       <div
         class="base-block rounded-5px p-10px mt-2rem mb-2rem p-20px shadow-lg hover:shadow-xl transition-120"
