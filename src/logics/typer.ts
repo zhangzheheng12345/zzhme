@@ -1,12 +1,6 @@
 import { ref } from 'vue'
 import { sleep } from './showUp'
-
-const words = [
-  'Hi!',
-  "I'm Zheheng Zhang!",
-  'From Zhejiang, China',
-  'Welcome to my site!'
-]
+import { words } from './typeWords'
 
 export const useTyper = () => {
   return {
