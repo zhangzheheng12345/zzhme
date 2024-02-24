@@ -1,8 +1,7 @@
 import { ref } from 'vue'
 import { sleep } from './showUp'
-import { words } from './typeWords'
 
-export const useTyper = () => {
+export const useTyper = (words) => {
   return {
     typer: ref(''),
     typeWords: async function () {
