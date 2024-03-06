@@ -24,7 +24,9 @@ export default defineConfig({
           nearBlack: 'var(--near-black)',
           deepGray: 'var(--deep-gray)',
           midGray: 'var(--mid-gray)',
-          lightGray: 'var(--light-gray)'
+          lightGray: 'var(--light-gray)',
+          lightMidGray: 'var(--light-mid-gray)',
+          hLightMidGray: 'var(--h-light-mid-gray)'
         }
       }
     }),

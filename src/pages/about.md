@@ -9,4 +9,4 @@ My site is built upon <span class="i-logos-astro-icon badge-icon-down"></span> A
 
 It's still in progress.
 
-If you like this site, you can go to [<span class="i-lucide-github badge-icon-down mr-2px"></span>GitHub repo](https://github.com/zhangzheheng/zzhme) of my personal website to take a look 👀, star ⭐, or fork 🍴.
+If you like this site, you can go to [<span><span class="i-lucide-github badge-icon-down mr-2px"></span>GitHub repo</span>](https://github.com/zhangzheheng/zzhme) of my personal website to take a look 👀, star ⭐, or fork 🍴.

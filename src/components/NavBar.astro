@@ -5,37 +5,50 @@
 <nav class="flex items-center pr-10px pl-2px m-10px">
   <a
     href="/"
-    class="inline-block m-0 p-3px scale-80 translate-y--2px hover:translate-y--4px transition-160 mt-7px"
+    class="inline-block m-0 py-8px px-10px scale-80 translate-y--2px hover:translate-y--4px transition-240 mt-7px"
     title="Home"
   >
     <img src="/logo.svg" alt="Home" class="inline-block dark:hidden" />
     <img src="/logo_dark.svg" alt="Home" class="hidden dark:inline-block" />
   </a>
   <div class="flex-auto"></div>
-  <a
-    href="/projects/"
-    class="i-lucide-box hover:translate-y--3px transition-160"
-    title="My Projects"></a>
-  <a
-    href="https://unsplash.com/@zheheng_zhang"
-    target="_blank"
-    class="i-tabler-brand-unsplash hover:translate-y--3px transition-160"
-    title="My Unsplash"></a>
-  <a
-    href="https://github.com/zhangzheheng12345"
-    target="_blank"
-    class="i-lucide-github hover:translate-y--3px transition-160"
-    title="My GitHub"></a>
-  <a href="/about/" class="i-lucide-info hover:translate-y--3px transition-160"
-  ></a>
+  <div
+    class="flex items-center rounded-8px bg-light-mid-gray p-5px px-1.4rem shadow-md transitin-240 hover:shadow-lg"
+  >
+    <a href="/projects/" title="My Projects">
+      <span class="i-lucide-box"></span>
+    </a>
+    <a
+      href="https://unsplash.com/@zheheng_zhang"
+      target="_blank"
+      title="My Unsplash"
+    >
+      <span class="i-tabler-brand-unsplash"></span>
+    </a>
+    <a
+      href="https://github.com/zhangzheheng12345"
+      target="_blank"
+      title="My GitHub"
+    >
+      <span class="i-lucide-github"></span>
+    </a>
+    <a href="/about/" title="About Page"><span class="i-lucide-info"></span></a>
+  </div>
 </nav>
 
 <style>
   a {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
     font-size: 18px;
     line-height: 100%;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+  }
+  a:hover {
+    background-color: var(--h-light-mid-gray);
   }
   img {
     padding: 0px;

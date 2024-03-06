@@ -6,7 +6,7 @@
       style="--start: 400ms"
     >
       <div
-        class="base-block rounded-5px p-10px mt-2rem mb-2rem p-20px shadow-lg hover:shadow-xl transition-120"
+        class="base-block rounded-10px p-10px mt-2rem mb-2rem p-20px shadow-md bg-light-mid-gray hover:shadow-lg transition-shadow transition-240 hover:bg-h-light-mid-gray"
       >
         <div class="mb-0.9rem mt-0.5rem">
           <a
@@ -52,11 +52,7 @@ const jump = (url: string) => {
   window.open(url)
 }
 </script>
-
 <style scoped>
-.base-block {
-  background-color: rgba(3, 2, 3, 0.03);
-}
 a:hover .i-lucide-arrow-up-right-square {
   opacity: 1;
   transform: translateX(5px);
