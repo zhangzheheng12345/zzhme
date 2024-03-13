@@ -6,7 +6,7 @@
       style="--start: 400ms"
     >
       <div
-        class="base-block rounded-10px p-10px mt-2rem mb-2rem p-20px shadow-md bg-light-mid-gray hover:shadow-lg transition-shadow transition-240 hover:bg-h-light-mid-gray"
+        class="base-block rounded-10px p-10px mt-2rem mb-2rem p-20px shadow-md bg-light-mid-gray hover:shadow-lg transition-240"
       >
         <div class="mb-0.9rem mt-0.5rem">
           <a
