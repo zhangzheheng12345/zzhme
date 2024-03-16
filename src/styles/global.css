@@ -167,3 +167,40 @@ p a {
 p a:hover {
   background-color: var(--light-mid-gray);
 }
+
+/* For home page */
+@media (max-width: 650px) {
+  .home-img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 949px) and (min-width: 651px) {
+  .home-img {
+    width: 55%;
+  }
+}
+
+@media (min-width: 950px) {
+  .spacer {
+    display: none;
+  }
+
+  .home {
+    flex-wrap: nowrap;
+  }
+
+  .home-img {
+    width: 45%;
+  }
+}
+
+@media (max-width: 949px) {
+  .spacer {
+    display: block;
+  }
+
+  .home {
+    flex-wrap: wrap;
+  }
+}

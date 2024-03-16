@@ -3,14 +3,20 @@ layout: ../layouts/HomePage.astro
 title: Zheheng Zhang
 ---
 
-<img
-  src="/avatar.png"
-  class="rounded-50% w-45% min-w-200px shadow-xl hover:shadow-2xl my-10px float-right"
-/>
+<div class="flex home slide-enter-content">
 
-<h1 class="text-2.8rem border-0 border-l-3px pl-1.05rem border-solid border-mid-gray">
-  Zheheng Zhang
-</h1>
+<div class="mx-1.3rem  home-img">
+  <img
+    src="/avatar.png"
+    class=" rounded-50% w-full shadow-xl hover:shadow-2xl object-contain"
+  />
+</div>
+
+<div class="spacer w-full"></div>
+
+<div class="mx-1.3rem slide-enter-content" style="--start: 150ms">
+
+<h1 class="text-3rem">Zheheng Zhang</h1>
 
 import Type from '../components/Type.vue'
 
@@ -25,3 +31,7 @@ Currently focusing on _front-end tech_, _Python_, _C++_, _Rust_, and learning _m
 Here is [<span><span class="i-lucide-box badge-icon-down mx-2px"></span>my project list</span>](/projects).
 
 Find me on [<span><span class="i-lucide-github badge-icon m1-2px translate-y-2px"></span>GitHub</span>](https://github.com/zhangzheheng12345), [<span><span class="i-tabler-brand-unsplash badge-icon-down mr-2px"></span>Unsplash</span>](https://upsplash.com/@zheheng_zhang), and mail me to <u><span class="i-lucide-mailbox badge-icon-down mr-2px"></span>zhangzheheng12345@163.com</u>.
+
+</div>
+
+</div>
