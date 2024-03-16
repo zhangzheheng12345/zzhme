@@ -156,7 +156,9 @@ nav>* {
   height: 1.1em;
 }
 
-p a {
+p a,
+p em,
+p strong {
   border-radius: 5px;
   padding-left: 4px;
   padding-right: 4px;
@@ -164,7 +166,9 @@ p a {
   padding-bottom: 3px;
 }
 
-p a:hover {
+p a:hover,
+p em:hover,
+p strong:hover {
   background-color: var(--light-mid-gray);
 }
 
